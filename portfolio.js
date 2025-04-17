@@ -88,3 +88,37 @@ window.onload = function () {
   });
 
 
+  window.addEventListener("scroll", () => {
+    const wanted = document.getElementById("wantedText");
+    const scrollY = window.scrollY;
+    wanted.style.transform = `translateY(${scrollY * -0.2}px)`; // move slightly upward
+  });
+  // window.addEventListener("scroll", () => {
+  //   const wantedText = document.getElementById("wantedText");
+  //   const scrollY = window.scrollY;
+  //   // Move the text up at half the scroll speed
+  //   wantedText.style.transform = `translateY(-${scrollY * 0.3}px)`;
+  // });
+
+// document.querySelector('.hover-scroll-section').addEventListener('mousemove', (e) => {
+//     gsap.to("#wantedText", {
+//       x: (e.clientX - window.innerWidth/2) * 0.02,
+//       y: (e.clientY - window.innerHeight/2) * 0.02,
+//       scale: 1.05,
+//       opacity: 0.03,
+//       duration: 0.5,
+//       ease: "power2.out"
+//     });
+//   });
+  
+//   // Reset on mouse leave
+//   document.querySelector('.hover-scroll-section').addEventListener('mouseleave', () => {
+//     gsap.to("#wantedText", {
+//       x: 0,
+//       y: 0,
+//       scale: 1,
+//       opacity: 0.01,
+//       duration: 0.8,
+//       ease: "elastic.out(1, 0.5)"
+//     });
+//   });
