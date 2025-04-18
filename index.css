@@ -1,6 +1,12 @@
 body {
     font-family: "Space Grotesk", sans-serif;
     scroll-behavior: smooth;
+    background: linear-gradient(to right, #6F15C4 0%, #350A5E 100%);
+  }
+  :root {
+    --primary-color: #2d2254;
+    --secondary--color: #f5c42f;
+    --text-color: #c5bbec;
   }
   .glow-text {
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
@@ -227,3 +233,20 @@ body {
       margin-right: 15px !important;
     }
   }
+
+
+  /* testing parallax */
+  /* .section {
+    position: relative;
+    padding: 0 20px;
+  }
+  .section-stream {
+    min-height: 700px;
+    background: linear-gradient(135deg, #7e22ce, #c084fc);
+  }
+  .section-top .content {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: auto;
+  } */
