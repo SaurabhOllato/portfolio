@@ -36,9 +36,9 @@ body {
   font-style: normal;
 } */
 .Main_font {
-  font-family: "Playwrite RO", cursive;
-  font-optical-sizing: auto;
-  font-weight: 200;
+  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: 600;
   font-style: normal;
 }
 
