@@ -229,7 +229,7 @@
     <!-- Experience Section -->
     <section
       id="about"
-      class="py-12 px-4 sm:py-10 sm:px-8 relative overflow-hidden h-fit lg:h-screen flex items-center"
+      class="py-12 px-4 sm:py-10 sm:px-8 relative overflow-hidden h-fit lg:h-fit mb-20 flex items-center"
     >
       <!-- Vertical "experience" link -->
       <a
@@ -315,7 +315,7 @@
       <!-- Horizontal "about vivek" text on mobile, vertical on desktop -->
       <a
         href="#"
-        class="absolute left-4 sm:left-8 top-6 sm:top-10 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group"
+        class="absolute left-4 sm:left-20 top-6 sm:top-10 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group"
       >
         <span
           class="group-hover:translate-x-1 transition-transform duration-300 pb-5"
@@ -323,13 +323,7 @@
         >
       </a>
 
-      <!-- Decorative elements (smaller on mobile) -->
-      <!-- <div
-        class="absolute -right-16 sm:-right-20 -top-16 sm:-top-20 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-pink-500/10 blur-xl sm:blur-3xl"
-      ></div> -->
-      <!-- <div
-        class="absolute -left-16 sm:-left-20 bottom-0 w-40 sm:w-64 h-40 sm:h-64 rounded-full bg-purple-600/10 blur-xl sm:blur-3xl"
-      ></div> -->
+    
 
       <div
         class="animate-group max-w-5xl mx-auto grid grid-cols-1 px-10 md:grid-cols-2 gap-8 sm:gap-12 relative z-10 sm:pt-0"
@@ -339,29 +333,52 @@
         <div class="space-y-2 sm:space-y-8 order-2 md:order-1">
           <!-- Software Logos (centered on mobile) -->
           <div
-            class="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-4 mb-6 mt-0 sm:mt-12"
+            class="flex flex-wrap justify-center sm:justify-start  gap-3 sm:gap-4 mb-0  mt-0 sm:mt-12"
             data-aos-delay="300"
           >
             <img
               src="/assests/capcut.png"
               alt="CapCut"
-              class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg hover:scale-110 transition-transform duration-300"
+              class="w-7 h-7 lg:w-10 lg:h-10  rounded-lg hover:scale-110 transition-transform duration-300"
             />
             <img
-              src="/assests/aftereffect2.jpeg"
-              alt="DaVinci"
-              class="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 rounded-lg transition-transform duration-300"
-            />
-            <!-- <img
-              src="/assests/adobe.png"
-              alt="Premiere"
-              class="w-8 h-8 sm:w-10 sm:h-10 rounded-lg hover:scale-110 transition-transform duration-300"
-            />
+            src="/assests/adobe-premiere-svgrepo-com.svg"
+            alt="premierepro"
+            class="w-8 h-8 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300"
+          /> 
             <img
-              src="/assests/adobe.png"
+              src="/assests/adobe-after-effects-svgrepo-com.svg"
+              alt="aftereffect"
+              class="w-8 h-8 lg:w-11 lg:h-11 hover:scale-110  rounded-lg transition-transform duration-300"
+            />
+             <img
+              src="/assests/alightmotion.jpg"
+              alt="alightmotion"
+              class="w-8 h-8 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300"
+            /> 
+            <img
+              src="/assests/blender-svgrepo-com.svg"
               alt="After Effects"
               class="w-8 h-8 sm:w-10 sm:h-10 opacity-40 rounded-lg hover:opacity-100 hover:scale-110 transition-all duration-300"
-            /> -->
+            /> 
+          </div>
+
+          <div
+            class="flex flex-wrap justify-center sm:justify-start  gap-3 sm:gap-4 "
+            data-aos-delay="300"
+          >
+            <img
+              src="/assests/canva.jpg"
+              alt="Canva"
+              class="w-8 h-8 sm:w-10 sm:h-10 object-cover rounded-lg hover:scale-110 transition-transform duration-300"
+            />
+            <img
+              src="/assests/photoshop.png"
+              alt="photoshop"
+              class="w-9 h-9 sm:w-10 sm:h-10 hover:scale-110  rounded-lg transition-transform duration-300"
+            />
+            
+             
           </div>
 
           <!-- Skills Sections -->
@@ -374,15 +391,13 @@
               <h3
                 class="text-base sm:text-lg font-semibold mb-2 flex items-center gap-2"
               >
-                <span
-                  class="w-2 h-2 sm:w-3 sm:h-3 bg-pink-500 rounded-full"
-                ></span>
+              
                 can do.
               </h3>
               <p
-                class="text-xs sm:text-sm text-purple-100 pl-4 sm:pl-5 border-l-2 border-pink-500/30 group-hover:border-pink-500/60 transition-all duration-500"
+                class="text-xs sm:text-sm text-purple-100 group-hover:border-pink-500/60 transition-all duration-500"
               >
-                <span class="font-semibold text-white">video editing.</span> i
+                <span class="font-semibold text-white ">video editing.</span> i
                 have a solid understanding of cutting, assembling, and refining
                 footage to tell compelling stories.
               </p>
@@ -392,13 +407,11 @@
               <h3
                 class="text-base sm:text-lg font-semibold mb-2 flex items-center gap-2"
               >
-                <span
-                  class="w-2 h-2 sm:w-3 sm:h-3 bg-purple-400 rounded-full"
-                ></span>
+                
                 still learning but can do.
               </h3>
               <ul
-                class="text-xs sm:text-sm text-purple-100 mb-4 sm:mb-6 space-y-1 pl-4 sm:pl-5 border-l-2 border-purple-400/30 group-hover:border-purple-400/60 transition-all duration-500"
+                class="text-xs sm:text-sm text-purple-100 mb-4 sm:mb-6 space-y-1   group-hover:border-purple-400/60 transition-all duration-500"
               >
                 <li class="hover:text-white transition-colors font-semibold">
                   sfx.
@@ -416,13 +429,11 @@
               <h3
                 class="text-base sm:text-lg font-semibold mb-2 flex items-center gap-2 opacity-40 hover:opacity-70 transition-opacity"
               >
-                <span
-                  class="w-2 h-2 sm:w-3 sm:h-3 bg-purple-200 rounded-full opacity-40"
-                ></span>
+                
                 will learn.
               </h3>
               <ul
-                class="text-xs sm:text-sm text-purple-100 opacity-40 hover:opacity-70 space-y-1 pl-4 sm:pl-5 border-l-2 border-purple-200/10 group-hover:border-purple-200/30 transition-all duration-500"
+                class="text-xs sm:text-sm text-purple-100 opacity-40 hover:opacity-70 space-y-1  group-hover:border-purple-200/30 transition-all duration-500"
               >
                 <li class="hover:text-white transition-colors">vfx.</li>
                 <li class="hover:text-white transition-colors">animation.</li>
@@ -442,51 +453,44 @@
             <span class="relative z-10">my story.</span>
           </h3>
 
-          <div class="story-para space-y-4 sm:space-y-6">
+          <div class="story-para   space-y-4 sm:space-y-6">
             <p
-              class="text-xs sm:text-sm leading-relaxed lowercase text-purple-100 font-inter rounded-lg hover:bg-purple-900/50 transition-all duration-300 p-2 sm:p-0"
+              class="text-xs sm:text-sm text-left leading-relaxed lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              i am a very <span class="line-through">lazy</span> creative and
-              zealous individual. once i set out on the rigorous path of
-              becoming a chartered accountant back in 2020, i quickly realized
-              that studying wasn't my thing and decided to pursue other passions
-              instead.
+              i am a very <span class="line-through">lazy</span> creative and zealous individual. once i set out on the rigorous path of
+              becoming a chartered accountant back in 2020, i quickly realized that studying wasn't my thing and decided to pursue other passions instead.
             </p>
-
+          
             <p
-              class="text-xs sm:text-sm leading-relaxed text-purple-100 font-inter transition-all duration-300 p-2 sm:p-0"
+              class="text-xs sm:text-sm leading-relaxed lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              one of my biggest joys is editing videos, where my creativity
-              shines, despite my only professional training being a youtube
-              tutorial i watched at 2x speed. people don't know that half of my
-              workflow is trial, error, and a prayer to the "undo" button.
+              one of my biggest joys is editing videos, where my creativity shines, despite my only professional training being a youtube
+              tutorial i watched at 2x speed. people don't know that half of my workflow is trial, error, and a prayer to the "undo" button.
             </p>
-
+          
             <p
-              class="text-xs sm:text-sm leading-relaxed text-purple-100 font-inter transition-all duration-300 p-2 sm:p-0"
+              class="text-xs sm:text-sm leading-relaxed lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              my fascination with video editing began during the 2020 lockdown
-              when i stumbled upon a cool edit online. that moment sparked
+              my fascination with video editing began during the 2020 lockdown when i stumbled upon a cool edit online. that moment sparked
               something within me, and i've been hooked ever since.
             </p>
-
+          
             <p
-              class="text-xs sm:text-sm leading-relaxed text-purple-100 font-inter transition-all duration-300 p-2 sm:p-0"
+              class="text-xs sm:text-sm leading-relaxed lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              outside of my editing suite, i'm an active guy who loves playing
-              football, gaming, and working on my calisthenics skills.
-              surprisingly, i'm also a decent cook and enjoy whipping up meals
-              when the mood strikes.
+              outside of my editing suite, i'm an active guy who loves playing football, gaming, and working on my calisthenics skills.
+              surprisingly, i'm also a decent cook and enjoy whipping up meals when the mood strikes.
             </p>
           </div>
+          
 
           <div
             class="resume-download mt-6 sm:mt-8 flex flex-row items-end gap-2 text-xs text-purple-200"
@@ -526,7 +530,7 @@
     >
       <a
         href="#"
-        class="absolute left-4 sm:left-8 top-6 sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group"
+        class="absolute left-4 sm:left-16 top-6 sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group"
       >
         <span
           class="group-hover:translate-x-1 transition-transform duration-300"
@@ -545,18 +549,14 @@
             class="text-xl sm:text-4xl font-bold mb-3 sm:mb-4 relative inline-block"
           >
             <span class="relative z-10">My Work</span>
-            <span
-              class="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-1 sm:h-2 bg-pink-500/40 z-0"
-            ></span>
+            
           </h4>
-          <p class="text-sm sm:text-lg opacity-80 max-w-2xl mx-auto">
-            A showcase of my creative projects and technical implementations
-          </p>
+          
         </div>
 
         <!-- Swiper Container - Adjusted for Mobile -->
-        <div class="max-w-screen-sm mx-auto px-4">
-          <div class="swiper-container mySwiper h-[355px] sm:h-[355px]">
+        <div class=" mx-auto px-4">
+          <div class="swiper-container mySwiper  h-[355px] sm:h-[355px]">
             <div class="swiper-wrapper">
               <!-- Slide 1 -->
               <div class="swiper-slide group">
@@ -586,7 +586,7 @@
                     </a>
                   </div>
                   <h3
-                    class="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors"
+                    class="text-2xl lg:text-lg font-medium  mb-1 sm:mb-2 group-hover:text-purple-300 transition-colors"
                   >
                     the diwali edit.
                   </h3>
@@ -622,7 +622,7 @@
                   <h3
                     class="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors"
                   >
-                    cafe video.
+                    cafe 1947.
                   </h3>
                 </div>
               </div>
