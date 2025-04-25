@@ -9,6 +9,10 @@ body {
   --secondary--color: #f5c42f;
   --text-color: #c5bbec;
 }
+.custom_footer{
+  background: linear-gradient(to right, #7B20D0 0%, #350A5E 100%);
+
+}
 .glow-text {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
 }
@@ -28,6 +32,9 @@ body {
 }
 .shadow-inner-custom {
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2); /* soft inner shadow */
+}
+.custom-shadow {
+  box-shadow: 0 4px 10px rgba(67, 6, 117, 0.6);
 }
 
 .nav-link:hover::after {
@@ -266,21 +273,7 @@ body {
 }
 
 
-/* testing parallax */
-/* .section {
-  position: relative;
-  padding: 0 20px;
-}
-.section-stream {
-  min-height: 700px;
-  background: linear-gradient(135deg, #7e22ce, #c084fc);
-}
-.section-top .content {
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  width: auto;
-} */
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
