@@ -714,216 +714,117 @@
       </div>
     </section>
     <!-- Reels -->
-    <section class="p-6 h-fit lg:h-screen px-10 mt-16">
-      <div
-        class="text-center mb-8"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-      >
-        <h4 class="text-2xl sm:text-3xl font-bold relative inline-block mb-10">
-          <span class="relative z-10">1080x1920's</span>
+    <section class="p-6 min-h-screen px-4 sm:px-10 mt-16">
+      <div class="text-center mb-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <h4 class="text-2xl sm:text-3xl font-bold inline-block mb-10 relative z-10">
+          1080x1920's
         </h4>
       </div>
-
+    
       <!-- Swiper Container -->
-      <div class="swiper reelsSwiper relative px-6 md:px-10">
+      <div class="swiper simpleSwiper">
         <div class="swiper-wrapper">
-          <!-- Slide 1 -->
-          <div
-            class="swiper-slide flex justify-center"
-            onmouseenter="const v=this.querySelector('video'); v.style.display='block'; v.play()"
-            onmouseleave="const v=this.querySelector('video'); v.pause(); v.currentTime=0; v.style.display='none'"
-          >
-            <a
-              href="https://youtu.be/tHEgRel_bF8"
-              target="_blank"
-              class="relative block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group"
-            >
-              <!-- Poster image -->
-              <img
-                src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
-                alt="YouTube Reel Thumbnail"
-                class="w-full h-full object-cover group-hover:hidden rounded-xl"
-              />
-
-              <!-- Hover video -->
-              <video
-                class="w-full h-full object-cover object-center hidden absolute top-0 left-0 rounded-xl"
-                muted
-                loop
-                playsinline
-              >
+    
+          <!-- Slide -->
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
                 <source src="./video/reel1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-
-              <!-- Hover Overlay -->
-              <!-- <div
-                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span class="text-white text-xl font-semibold">▶️ Watch Reel</span>
-              </div> -->
             </a>
           </div>
-          <div
-            class="swiper-slide flex justify-center"
-            onmouseenter="const v=this.querySelector('video'); v.style.display='block'; v.play()"
-            onmouseleave="const v=this.querySelector('video'); v.pause(); v.currentTime=0; v.style.display='none'"
-          >
-            <a
-              href="https://youtu.be/tHEgRel_bF8"
-              target="_blank"
-              class="relative block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group"
-            >
-              <!-- Poster image -->
-              <img
-                src="https://img.youtube.com/vi/kolSGzKUpHU/maxresdefault.jpg"
-                alt="YouTube Reel Thumbnail"
-                class="w-full h-full object-cover group-hover:hidden rounded-xl"
-              />
-
-              <!-- Hover video -->
-              <video
-                class="w-full h-full object-cover object-center hidden absolute top-0 left-0 rounded-xl"
-                muted
-                loop
-                playsinline
-              >
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
                 <source src="./video/reel1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-
-              <!-- Hover Overlay -->
-              <!-- <div
-                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span class="text-white text-xl font-semibold">▶️ Watch Reel</span>
-              </div> -->
             </a>
           </div>
-          <div
-            class="swiper-slide flex justify-center"
-            onmouseenter="const v=this.querySelector('video'); v.style.display='block'; v.play()"
-            onmouseleave="const v=this.querySelector('video'); v.pause(); v.currentTime=0; v.style.display='none'"
-          >
-            <a
-              href="https://youtu.be/tHEgRel_bF8"
-              target="_blank"
-              class="relative block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group"
-            >
-              <!-- Poster image -->
-              <img
-                src="https://img.youtube.com/vi/kolSGzKUpHU/maxresdefault.jpg"
-                alt="YouTube Reel Thumbnail"
-                class="w-full h-full object-cover group-hover:hidden rounded-xl"
-              />
-
-              <!-- Hover video -->
-              <video
-                class="w-full h-full object-cover object-center hidden absolute top-0 left-0 rounded-xl"
-                muted
-                loop
-                playsinline
-              >
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
                 <source src="./video/reel1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-
-              <!-- Hover Overlay -->
-              <!-- <div
-                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span class="text-white text-xl font-semibold">▶️ Watch Reel</span>
-              </div> -->
             </a>
           </div>
-          <div
-            class="swiper-slide flex justify-center"
-            onmouseenter="const v=this.querySelector('video'); v.style.display='block'; v.play()"
-            onmouseleave="const v=this.querySelector('video'); v.pause(); v.currentTime=0; v.style.display='none'"
-          >
-            <a
-              href="https://youtu.be/tHEgRel_bF8"
-              target="_blank"
-              class="relative block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group"
-            >
-              <!-- Poster image -->
-              <img
-                src="https://img.youtube.com/vi/jUbtLCGWEiM/hqdefault.jpg"
-                alt="YouTube Reel Thumbnail"
-                class="w-full h-full object-cover group-hover:hidden rounded-xl"
-              />
-
-              <!-- Hover video -->
-              <video
-                class="w-full h-full object-cover object-center hidden absolute top-0 left-0 rounded-xl"
-                muted
-                loop
-                playsinline
-              >
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
                 <source src="./video/reel1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-
-              <!-- Hover Overlay -->
-              <!-- <div
-                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span class="text-white text-xl font-semibold">▶️ Watch Reel</span>
-              </div> -->
             </a>
           </div>
-
-          <div
-            class="swiper-slide flex justify-center"
-            onmouseenter="const v=this.querySelector('video'); v.style.display='block'; v.play()"
-            onmouseleave="const v=this.querySelector('video'); v.pause(); v.currentTime=0; v.style.display='none'"
-          >
-            <a
-              href="https://youtu.be/tHEgRel_bF8"
-              target="_blank"
-              class="relative block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group"
-            >
-              <!-- Poster image -->
-              <img
-                src="https://i.ytimg.com/vi/ubu050rUKIE/maxresdefault.jpg"
-                alt="YouTube Reel Thumbnail"
-                class="w-full h-full object-cover group-hover:hidden rounded-xl"
-              />
-
-              <!-- Hover video -->
-              <video
-                class="w-full h-full object-cover object-center hidden absolute top-0 left-0 rounded-xl"
-                muted
-                loop
-                playsinline
-              >
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
                 <source src="./video/reel1.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-
-              <!-- Hover Overlay -->
-              <!-- <div
-                class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              >
-                <span class="text-white text-xl font-semibold">▶️ Watch Reel</span>
-              </div> -->
             </a>
           </div>
-
-          <!-- You can duplicate the slide above for more reels -->
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/tHEgRel_bF8" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/tHEgRel_bF8/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                <source src="./video/reel1.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+    
+          <!-- Duplicate for more slides -->
+          <div class="swiper-slide flex justify-center">
+            <a href="https://youtu.be/kolSGzKUpHU" target="_blank" class="block w-full max-w-[300px] h-[400px] rounded-xl shadow-lg overflow-hidden group relative">
+              <img src="https://img.youtube.com/vi/kolSGzKUpHU/maxresdefault.jpg"
+                   alt="Thumbnail"
+                   class="w-full h-full object-cover group-hover:hidden rounded-xl" />
+              <video muted loop playsinline
+                     class="hidden absolute top-0 left-0 w-full h-full object-cover rounded-xl group-hover:block"
+                     onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+                <source src="./video/reel2.mp4" type="video/mp4" />
+              </video>
+            </a>
+          </div>
+    
         </div>
-
+    
         <!-- Swiper Pagination -->
-        <div
-          class="swiper-pagination !-bottom-10 [--swiper-pagination-color:theme(colors.pink.300)] [--swiper-pagination-bullet-size:8px] sm:[--swiper-pagination-bullet-size:10px]"
-        ></div>
-        <!-- Swiper Navigation Arrows -->
-        <!-- <div class="swiper-button-prev text-black"></div>
-        <div class="swiper-button-next text-black"></div> -->
+        <div class="swiper-pagination !-bottom-10"></div>
+    
+        <!-- Swiper Arrows (optional) -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
+    
+    
 
     <div class="flex justify-center mb-10 items-center">
       <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
