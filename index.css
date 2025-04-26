@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap");
 body {
   font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
-  background: linear-gradient(to right, #6F15C4 0%, #350A5E 100%);
+  background: linear-gradient(to right, #6f15c4 0%, #350a5e 100%);
 }
 :root {
   /* --primary-color: #2d2254; */
   --secondary--color: #f5c42f;
   --text-color: #c5bbec;
 }
-.custom_footer{
-  background: linear-gradient(to right, #7B20D0 0%, #350A5E 100%);
-
+.custom_footer {
+  background: linear-gradient(to right, #7b20d0 0%, #350a5e 100%);
 }
 .glow-text {
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
@@ -21,7 +20,7 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0%;
   height: 2px;
@@ -34,7 +33,11 @@ body {
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2); /* soft inner shadow */
 }
 .custom-shadow {
-  box-shadow: 0 4px 10px rgba(67, 6, 117, 0.6);
+  box-shadow: 0px -6px 20px rgba(39, 0, 75, 0.6);
+}
+
+.nav-shadow {
+  box-shadow: 0 5px 40px #27004b;
 }
 
 .nav-link:hover::after {
@@ -47,11 +50,10 @@ body {
 } */
 .Main_font {
   font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
+  font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
-
 
 .vertical-text {
   writing-mode: vertical-rl;
@@ -272,8 +274,6 @@ body {
   }
 }
 
-
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -285,4 +285,3 @@ body {
 .animate-spin-slow {
   animation: spin 10s linear infinite;
 }
-
