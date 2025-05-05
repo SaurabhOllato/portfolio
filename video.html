@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YouTube Video Swiper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Swiper Container -->
+    <div class="swiper ytVideoSwiper w-full px-4 py-8">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide flex justify-center w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
+          <a
+            href="https://youtu.be/J---aiyznGQ"
+            target="_blank"
+            class="block w-[90vw] max-w-xs sm:max-w-sm h-64 rounded-xl overflow-hidden relative group shadow-lg"
+          >
+            <img
+              src="https://i.ytimg.com/vi/J---aiyznGQ/hqdefault.jpg"
+              alt="Keyboard Cat"
+              class="w-full h-full object-cover group-hover:opacity-0 transition duration-300"
+            />
+            <video
+              muted
+              loop
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()"
+              onmouseleave="this.pause(); this.currentTime=0;"
+            >
+              <source
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent text-white text-sm font-medium"
+            >
+              Keyboard Cat
+            </div>
+          </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide flex justify-center w-[300px] h-[300px] lg:w-[400px] lg:h-[400px]">
+          <a
+            href="https://youtu.be/oHg5SJYRHA0"
+            target="_blank"
+            class="block w-[90vw] max-w-xs sm:max-w-sm h-64 rounded-xl overflow-hidden relative group shadow-lg"
+          >
+            <img
+              src="https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg"
+              alt="Rickroll"
+              class="w-full h-full object-cover group-hover:opacity-0 transition duration-300"
+            />
+            <video
+              muted
+              loop
+              playsinline
+              class="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()"
+              onmouseleave="this.pause(); this.currentTime=0;"
+            >
+              <source
+                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
+                type="video/mp4"
+              />
+            </video>
+            <div
+              class="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent text-white text-sm font-medium"
+            >
+              Never Gonna Give You Up
+            </div>
+          </a>
+        </div>
+
+        <!-- Add more slides here -->
+      </div>
+
+      <!-- Navigation Arrows -->
+      <div
+        class="swiper-button-prev !text-white !bg-black/50 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center"
+      ></div>
+      <div
+        class="swiper-button-next !text-white !bg-black/50 backdrop-blur-md rounded-full w-10 h-10 flex items-center justify-center"
+      ></div>
+
+      <!-- Pagination Dots -->
+      <div class="swiper-pagination mt-4"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiper Init -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".ytVideoSwiper", {
+          slidesPerView: 1,
+          spaceBetween: 16,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints: {
+            640: {
+              slidesPerView: 1.2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

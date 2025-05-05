@@ -2,7 +2,7 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   scroll-behavior: smooth;
-  background: linear-gradient(to right, #6f15c4 0%, #350a5e 100%);
+  background: linear-gradient(to right,  #350a5e  0%, #6f15c4 100%);
 }
 :root {
   /* --primary-color: #2d2254; */
@@ -284,4 +284,9 @@ body {
 }
 .animate-spin-slow {
   animation: spin 10s linear infinite;
+}
+
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
 }
