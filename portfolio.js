@@ -239,6 +239,16 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+const video = document.querySelector(".video-player");
+
+if (window.innerWidth < 1024) {
+  // On smaller screens (mobile/tablet)
+  video.style.opacity = "1"; // Show video
+  video.play().catch((err) => {
+    console.warn("Autoplay blocked:", err.message);
+  });
+}
+
 // email
 const form = document.getElementById("contact-form");
 const status = document.getElementById("form-status");
