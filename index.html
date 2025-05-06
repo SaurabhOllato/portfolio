@@ -1,256 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" class="text-white scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vivek | Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Font Awesome CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="index.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vivek | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet"> -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome CDN -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
+/>  <link rel="stylesheet" href="index.css" />
 
-    <!-- GSAP CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-  </head>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <body class="font-sans">
-    <!-- Navbar -->
-    <nav
-      role="navigation"
-      aria-label="Main Navigation"
-      class="flex justify-between items-center px-6 md:px-40 py-4 text-sm sticky top-0 z-50 backdrop-blur-sm transition-all duration-300"
-      id="navbar"
-    >
-      <!-- Profile Image with Hover Effect -->
-      <div class="relative group inline-flex items-center">
-        <div
-          class="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-pink-300/30 overflow-hidden transition-all duration-500 group-hover:border-pink-300/70 profile-image-container"
-        >
-          <img
-            src="data:image/jpeg;base64,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"
-            alt="Saurabh"
-            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-        <span
-          class="absolute left-full ml-2 top-1/2 -translate-y-1/2 text-xs location-text opacity-70 translate-x-0 transition-all duration-300"
-        >
-          मुंबई 🇮🇳
-        </span>
-      </div>
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+  <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+</head>
 
-      <!-- Navigation Links -->
-      <div class="flex gap-3 md:gap-16 text-sm lowercase">
-        <a
-          href="#"
-          class="text-md hover:opacity-80 font-medium hidden md:inline"
-          aria-label="Instagram"
-        >
-          Instagram
-        </a>
-        <a
-          href="#"
-          class="text-sm hover:opacity-80 font-medium hidden md:inline"
-          aria-label="LinkedIn"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="#"
-          class="text-sm hover:opacity-80 font-medium cursor-not-allowed hidden md:inline"
-          aria-label="Twitter"
-        >
-          Twitter
-        </a>
-        <a
-          href="#"
-          class="text-sm hover:opacity-80 font-medium cursor-not-allowed hidden md:inline"
-          aria-label="YouTube"
-        >
-          YouTube
-        </a>
-        <a
-          href="#"
-          class="text-sm hover:opacity-80 font-medium hidden md:inline"
-          aria-label="Email"
-        >
-          vivekchaurasia@gmail.com
-        </a>
-
-        <!-- Social Media Icons for smaller screens -->
-        <div class="flex gap-3 md:hidden  ">
-          <a href="#" class="text-lg hover:opacity-80 " aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="#" class="text-lg hover:opacity-80" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="#"
-            class="text-lg hover:opacity-80 cursor-not-allowed"
-            aria-label="Twitter"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="#"
-            class="text-lg hover:opacity-80 cursor-not-allowed"
-            aria-label="YouTube"
-          >
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="#" class="text-lg hover:opacity-80" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
-        </div>
-      </div>
-    </nav>
-
-    </nav>
-
-    <!-- Hero Section -->
-    <section
-      class="w-full h-[600px] lg:min-h-screen flex flex-col justify-center items-center px-8 text-center relative overflow-hidden"
-    >
-      <!-- Profile Image with Enhanced Tooltip -->
+<body>
+  <!-- Navbar -->
+  <nav role="navigation" aria-label="Main Navigation"
+    class="flex justify-between items-center px-6 md:px-40 py-4 text-sm sticky top-0 z-50 backdrop-blur-sm transition-all duration-300"
+    id="navbar">
+    <!-- Profile Image with Hover Effect -->
+    <div class="relative group inline-flex items-center">
       <div
-        class="absolute left-4 sm:left-20 md:left-40 top-2 group group-hover:opacity-100 transition-opacity duration-300"
-      >
-        <object
-          data="./assets/Group2.svg"
-          type="image/svg+xml"
-          class="rotate-[4deg] w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 pl-2 sm:pl-6 md:pl-10 opacity-10 sm:opacity-40 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300"
-        ></object>
-      </div>
-
-      <!-- Main Content -->
-      <div class="relative z-10" data-aos="zoom-in" data-aos-delay="500">
+        class="w-6 h-6 md:w-12 md:h-12 rounded-full border-2 border-pink-300/30 overflow-hidden transition-all duration-500 group-hover:border-pink-300/70 profile-image-container">
         <img
-          src="./assets/Group28.svg"
-          class="text-4xl md:text-7xl animate-fadeIn"
-        />
+          src="data:image/jpeg;base64,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"
+          alt="vivek" class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105" />
+      </div>
+      <span
+        class="absolute left-full ml-2 top-1/2 -translate-y-1/2 text-xs location-text opacity-70 translate-x-0 transition-all duration-300">
+        मुंबई 🇮🇳
+      </span>
+    </div>
 
+    <!-- Navigation Links -->
+    <div class="flex gap-3 md:gap-16 text-sm lowercase">
+      <a href="#" class="text-md hover:opacity-80 font-medium hidden md:inline" aria-label="Instagram">
+        Instagram
+      </a>
+      <a href="#" class="text-sm hover:opacity-80 font-medium hidden md:inline" aria-label="LinkedIn" >
+        LinkedIn
+      </a>
+      <a href="#" class="text-sm hover:opacity-80 font-medium cursor-not-allowed hidden md:inline" aria-label="Twitter">
+        Twitter
+      </a>
+      <a href="#" class="text-sm hover:opacity-80 font-medium cursor-not-allowed hidden md:inline" aria-label="YouTube">
+        YouTube
+      </a>
+      <a href="#" class="text-sm hover:opacity-80 font-medium hidden md:inline" aria-label="Email">
+        vivekchaurasia@gmail.com
+      </a>
+
+      <!-- Social Media Icons for smaller screens -->
+      <div class="flex gap-3 md:hidden  ">
+        <a href="#" class="text-lg hover:opacity-80 " aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="text-lg hover:opacity-80" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="#" class="text-lg hover:opacity-80 cursor-not-allowed" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-lg hover:opacity-80 cursor-not-allowed" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" class="text-lg hover:opacity-80" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <section
+    class="w-full h-[600px] lg:min-h-screen flex flex-col justify-center items-center px-8 text-center relative overflow-hidden">
+    <!-- Profile Image with Enhanced Tooltip -->
+    <div
+      class="absolute left-4 sm:left-20 md:left-40 top-2 group group-hover:opacity-100 transition-opacity duration-300">
+      <object data="./assets/Group2.svg" type="image/svg+xml"
+        class="rotate-[4deg] w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 pl-2 sm:pl-6 md:pl-10 opacity-10 sm:opacity-40 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300"></object>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10" data-aos="zoom-in" data-aos-delay="500">
+      <img src="./assets/Group28.svg" class="text-4xl md:text-7xl animate-fadeIn" />
+
+      <div class="flex justify-center items-center relative mt-12" data-aos="zoom-in-up" data-aos-delay="900">
+        <!-- SVG Curved Text -->
+        <svg width="120" height="120" class="absolute animate-spin-slow caveat-Font">
+          <defs>
+            <path id="circlePath" d="M 60, 60 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0" />
+          </defs>
+          <text fill="white" font-size="16" letter-spacing="6">
+            <textPath href="#circlePath" startOffset="25%" text-anchor="middle">
+              coming soon
+            </textPath>
+          </text>
+        </svg>
+
+        <!-- Center Button -->
         <div
-          class="flex justify-center items-center relative mt-12"
-          data-aos="zoom-in-up"
-          data-aos-delay="900"
-        >
-          <!-- SVG Curved Text -->
-          <svg
-            width="120"
-            height="120"
-            class="absolute animate-spin-slow caveat-Font"
-          >
-            <defs>
-              <path
-                id="circlePath"
-                d="M 60, 60 m -50, 0 a 50,50 0 1,1 100,0 a 50,50 0 1,1 -100,0"
-              />
-            </defs>
-            <text fill="white" font-size="16" letter-spacing="6">
-              <textPath
-                href="#circlePath"
-                startOffset="25%"
-                text-anchor="middle"
-              >
-                coming soon
-              </textPath>
-            </text>
-          </svg>
-
-          <!-- Center Button -->
-          <div
-            class="w-20 h-20 bg-purple-700 rounded-full cursor-pointer shadow-[inset_2px_2px_4px_#4b0082,4px_4px_10px_rgba(0,0,0,0.4)] flex items-center justify-center transform transition-transform duration-200 hover:translate-y-[2px] hover:shadow-[inset_1px_1px_2px_#4b0082,2px_2px_5px_rgba(0,0,0,0.3)] active:translate-y-[4px] active:shadow-inner"
-            data-aos="fade-up"
-            data-aos-delay="1100"
-          >
-            <div
-              class="text-center text-purple-200 font-semibold text-sm leading-tight"
-            >
-              play<br />reel
-            </div>
+          class="w-20 h-20 bg-purple-700 rounded-full cursor-pointer shadow-[inset_2px_2px_4px_#4b0082,4px_4px_10px_rgba(0,0,0,0.4)] flex items-center justify-center transform transition-transform duration-200 hover:translate-y-[2px] hover:shadow-[inset_1px_1px_2px_#4b0082,2px_2px_5px_rgba(0,0,0,0.3)] active:translate-y-[4px] active:shadow-inner"
+          data-aos="fade-up" data-aos-delay="1100">
+          <div class="text-center text-purple-200 font-semibold text-sm leading-tight">
+            play<br />reel
           </div>
         </div>
       </div>
-
-      <!-- Scroll Indicator with Animation -->
-      <!-- <div class="h-1 w-3/4 bg-[#430675] mt-20 custom-shadow rounded-full "></div> -->
-    </section>
-    <div class="flex justify-center mb-10 items-center">
-      <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
     </div>
 
-    <!-- Experience Section -->
-    <section
+    <!-- Scroll Indicator with Animation -->
+    <!-- <div class="h-1 w-3/4 bg-[#430675] mt-20 custom-shadow rounded-full "></div> -->
+  </section>
+  <div class="flex justify-center mb-10 items-center">
+    <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
+  </div>
 
+  <!-- Experience Section -->
+  <section id="about" class="py-12 px-4 sm:py-20 sm:px-8  relative overflow-hidden mb-20 flex items-center">
+    <!-- Vertical "experience" link -->
+    <a href="#"
+      class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+      <span class="group-hover:translate-x-1 transition-transform duration-300">
+        experience
+      </span>
+    </a>
+    <!-- 404 background with vertical styling -->
 
-      id="about"
-      class="py-12 px-4 sm:py-20 sm:px-8  relative overflow-hidden mb-20 flex items-center"
-    >
-      <!-- Vertical "experience" link -->
-      <a
-        href="#" class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">      
-        <span
-          class="group-hover:translate-x-1 transition-transform duration-300"
-        >
-          experience
-        </span>
-      </a>
-      <!-- 404 background with vertical styling -->
+    <div class="absolute inset-0 flex items-center justify-center">
+      <div class=" font-extrabold text-center leading-none flex items-center justify-center transform origin-center">
+        <img src="./assets/Group 33.png" alt="404" class="w-xl h-full object-cover" />
 
-      <div class="absolute inset-0 flex items-center justify-center">
-        <div
-          class=" font-extrabold text-center leading-none flex items-center justify-center transform origin-center"
-        >
-          <img 
-         src="./assets/Group 33.png" alt="404" class="w-xl h-full object-cover" />
-
-        </div>
       </div>
+    </div>
 
-      
 
-      <!-- Content container -->
-      <div class="max-w-3xl mx-auto relative z-10 w-full px-2 sm:px-0">
-        <div
-        class="rounded-xl p-4 sm:p-8 md:p-12 mt-4 sm:mt-16 sm:backdrop-blur-sm"
-        data-aos="fade-right"
-        data-aos-delay="400"
-        data-aos-duration="1500"
-      >
-        <p
-          class="text-sm sm:text-base md:text-lg font-inter leading-relaxed text-purple-100"
-        >
+
+    <!-- Content container -->
+    <div class="max-w-3xl mx-auto relative z-10 w-full px-2 sm:px-0">
+      <div class="rounded-xl p-4 sm:p-8 md:p-12 mt-4 sm:mt-16 sm:backdrop-blur-sm" data-aos="fade-right"
+        data-aos-delay="400" data-aos-duration="1500">
+        <p class="text-sm sm:text-base md:text-lg font-inter leading-relaxed text-purple-100">
           While I don't have professional industry experience yet, I've
           invested a lot of time into refining my video editing skills through
           personal projects, editing videos for friends and family, and
@@ -266,700 +178,699 @@
       </div>
 
 
-        <!-- Arrow image -->
-        <div
-          class="absolute -right-12 -bottom-2 w-32 pointer-events-none"
-          data-aos="fade-left"
-          data-aos-delay="600"
-          data-aos-duration="1500"
-        >
-          <object
-            data="./assets/Arrow4.svg"
-            type="image/svg+xml"
-            class="rotate-[2deg] w-30 h-30 md:w-32 md:h-32 ml-5 opacity-10 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300"
-          ></object>
-        </div>
-
-        <!-- Fun note -->
-        <div
-          class="absolute left-full -bottom-10 w-full ml-10 caveat-Font text-lg z-20 hover:opacity-70 transition-opacity"
-          data-aos="fade-left"
-          data-aos-delay="400"
-          data-aos-duration="1500"
-        >
-          <span class="opacity-20">
-            Definitely not <br />
-            Ai generated
-          </span>
-        </div>
+      <!-- Arrow image -->
+      <div class="absolute -right-12 -bottom-2 w-32 pointer-events-none" data-aos="fade-left" data-aos-delay="600"
+        data-aos-duration="1500">
+        <object data="./assets/Arrow4.svg" type="image/svg+xml"
+          class="rotate-[2deg] w-30 h-30 md:w-32 md:h-32 ml-5 opacity-10 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300"></object>
       </div>
-    </section>
 
-    <div class="flex justify-center mb-10 items-center">
-      <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
-    </div>
-
-    <!--  about-->
-
-    <section
-      class="h-fit px-5 sm:px-6 py-8 sm:py-12 text-white relative overflow-hidden"
-      id="about"
-    >
-      <!-- Horizontal "about vivek" text on mobile, vertical on desktop -->
-      <a
-         href="#" class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-        <span
-          class="group-hover:translate-x-1 transition-transform duration-300 pb-5"
-          >about vivek</span
-        >
-      </a>
-
+      <!-- Fun note -->
       <div
-        class="animate-group max-w-5xl lg:mx-auto grid grid-cols-1 px-0 lg:px:10 md:grid-cols-2 gap-8 sm:gap-12 relative z-10 sm:pt-0"
-        data-aos="fade-right"
-      >
-        <!-- Left Column -->
-        <div class="space-y-4 sm:space-y-8 order-2 md:order-1">
-          <!-- Software Logos (centered on mobile) -->
-          <div
-            class="flex flex-wrap justify-center gap-3 sm:gap-4 sm:justify-start sm:mt-12"
-            data-aos-delay="300"
-          >
-            <img
-              src="assets/capcut.png"
-              alt="CapCut"
-              class="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-lg hover:scale-110 transition-transform duration-300"
-            />
-            <img
-              src="assets/adobe-premiere-svgrepo-com.svg"
-              alt="premierepro"
-              class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300"
-            />
-            <img
-              src="assets/adobe-after-effects-svgrepo-com.svg"
-              alt="aftereffect"
-              class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 hover:scale-110 rounded-lg transition-transform duration-300"
-            />
-            <img
-              src="assets/alightmotion.jpg"
-              alt="alightmotion"
-              class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300"
-            />
-            <img
-              src="assets/blender-svgrepo-com.svg"
-              alt="After Effects"
-              class="w-8 h-8 sm:w-9 sm:h-9 opacity-40 rounded-lg hover:opacity-100 hover:scale-110 transition-all duration-300"
-            />
-          </div>
-
-          <div
-            class="flex flex-wrap justify-center gap-3 sm:gap-4 sm:justify-start"
-            data-aos-delay="300"
-          >
-            <img
-              src="assets/canva-icon.svg"
-              alt="Canva"
-              class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-lg hover:scale-110 transition-transform duration-300"
-            />
-            <img
-              src="assets/adobe-photoshop-icon.svg"
-              alt="photoshop"
-              class="w-9 h-9 sm:w-10 sm:h-10 hover:scale-110 rounded-lg transition-transform duration-300"
-            />
-          </div>
-
-          <!-- Skills Sections -->
-          <div class="space-y-4 sm:space-y-6 ml-2 lg:ml-0">
-            <div
-              class="group animate-group"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              <h3
-                class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2"
-              >
-                can do.
-              </h3>
-              <p
-                class="text-xs sm:text-sm text-purple-100 group-hover:border-pink-500/60 transition-all duration-500"
-              >
-                <span class="font-semibold text-white">video editing.</span> i
-                have a solid understanding of cutting, assembling, and refining
-                footage to tell compelling stories.
-              </p>
-            </div>
-
-            <div class="group" data-aos="fade-up" data-aos-delay="400">
-              <h3
-                class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2"
-              >
-                still learning but can do.
-              </h3>
-              <ul
-                class="text-xs sm:text-sm text-purple-100 mb-2 sm:mb-6 space-y-1 group-hover:border-purple-400/60 transition-all duration-500"
-              >
-                <li class="hover:text-white transition-colors font-semibold">
-                  sfx.
-                </li>
-                <li class="hover:text-white transition-colors font-semibold">
-                  color grading.
-                </li>
-                <li class="hover:text-white transition-colors font-semibold">
-                  motion graphics.
-                </li>
-              </ul>
-            </div>
-
-            <div class="group" data-aos="fade-up" data-aos-delay="600">
-              <h3
-                class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2 opacity-10 hover:opacity-70 transition-opacity"
-              >
-                will learn.
-              </h3>
-              <ul
-                class="text-xs sm:text-sm text-purple-100 opacity-10 hover:opacity-70 space-y-1 group-hover:border-purple-200/30 transition-all duration-500"
-              >
-                <li class="hover:text-white transition-colors">vfx.</li>
-                <li class="hover:text-white transition-colors">animation.</li>
-                <li class="hover:text-white transition-colors">
-                  sound design.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="sm:space-y-5 order-1 md:order-2" data-aos="fade-left">
-          <h3
-            class="text-xl sm:text-2xl font-semibold relative ml-2 lg:ml-0 inline-block pt-10"
-          >
-            <span class="relative z-10">my story.</span>
-          </h3>
-
-          <div class="story-para space-y-4 sm:space-y-6">
-            <p
-              class="text-xs sm:text-sm leading-relaxed text-justify lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              i am a very <span class="line-through">lazy</span> creative and
-              zealous individual. once i set out on the rigorous path of
-              becoming a chartered accountant back in 2020, i quickly realized
-              that studying wasn't my thing and decided to pursue other passions
-              instead.
-            </p>
-
-            <p
-              class="text-xs sm:text-sm leading-relaxed text-justify lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            >
-              one of my biggest joys is editing videos, where my creativity
-              shines, despite my only professional training being a youtube
-              tutorial i watched at 2x speed. people don't know that half of my
-              workflow is trial, error, and a prayer to the "undo" button.
-            </p>
-
-            <p
-              class="text-xs sm:text-sm leading-relaxed lowercase text-justify text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
-              data-aos="fade-up"
-              data-aos-delay="300"
-            >
-              my fascination with video editing began during the 2020 lockdown
-              when i stumbled upon a cool edit online. that moment sparked
-              something within me, and i've been hooked ever since.
-            </p>
-
-            <p
-              class="text-xs sm:text-sm leading-relaxed lowercase text-justify text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              outside of my editing suite, i'm an active guy who loves playing
-              football, gaming, and working on my calisthenics skills.
-              surprisingly, i'm also a decent cook and enjoy whipping up meals
-              when the mood strikes.
-            </p>
-          </div>
-          <div
-            class="resume-download flex flex-row items-center justify-end gap-2 text-xs text-purple-200"
-          >
-            <span
-              class="caveat-Font text-xs opacity-30 hover:opacity-70 transition-opacity duration-300"
-            >
-              click here to<br />download<br />my full resume
-            </span>
-            <button
-              class="p-1 sm:p-2 rounded-full hover:scale-110 transition-all duration-300 group"
-            >
-              <img
-                src="../assets/resume button.png"
-                class="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]"
-                alt="Resume Button"
-              />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="flex justify-center mb-10 items-center">
-      <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
-    </div>
-
-    <!-- portfolio -->
-    <section class="py-16 px-4 sm:py-24 lg:py-32 relative overflow-hidden" id="portfolio">
-     
-      <!-- Vertical link with animation -->
-      <a href="#" class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-        <span class="group-hover:translate-x-1 group-hover:scale-110 transition-all duration-500 flex items-center">
-          portfolio
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
+        class="absolute left-full -bottom-10 w-full ml-10 caveat-Font text-lg z-20 hover:opacity-70 transition-opacity"
+        data-aos="fade-left" data-aos-delay="400" data-aos-duration="1500">
+        <span class="opacity-20">
+          Definitely not <br />
+          Ai generated
         </span>
-      </a>
-    
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <!-- Section header with animated underline -->
-        <div class="text-center mb-12 sm:mb-20" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
-          <h4 class="text-3xl sm:text-4xl lg:text-3xl font-bold inline-block mb-6 relative z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
-            <span class="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-purple-400">1920x1080's</span>
-            <span class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></span>
-          </h4>
-          <!-- <p class="text-lg sm:text-xl text-purple-200 max-w-2xl mx-auto">A curated collection of my finest video work in stunning 1080p resolution</p> -->
-        </div>
-    
-        <!-- Enhanced Swiper Container -->
-        <div class="mx-auto px-4 relative">
-          <div class="swiper-container mySwiper h-[240px] sm:h-[320px] md:h-[380px] lg:h-[420px]">
-            <div class="swiper-wrapper">
-              <!-- Slide 1 - Enhanced with stats -->
-              <div class="swiper-slide group">
-                <div class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-1 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
-                  <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
-                    <a href="https://youtu.be/GAmSy3H3FR0" target="_blank" class="relative block rounded-lg overflow-hidden w-full h-full">
-                      <img src="https://img.youtube.com/vi/GAmSy3H3FR0/maxresdefault.jpg" alt="The Diwali Edit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"/>
-                      <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="text-center p-4">
-                          <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️ Watch on YouTube</span>
-                          <span class="text-pink-300 text-sm sm:text-base">1.2K views • 94 likes</span>
-                        </div>
-                      </div>
-                      <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">4:32</div>
-                    </a>
-                  </div>
-                  <div class="flex justify-between items-start">
-                    <div>
-                      <h3 class="text-2xl lg:text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-purple-300 transition-colors">
-                        the diwali edit.
-                      </h3>
-                      <p class="text-sm text-purple-200 opacity-80">Festival • 2023</p>
-                    </div>
-                    <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Slide 2 - Cafe 1947 -->
-              <div class="swiper-slide group">
-                <div class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
-                  <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
-                    <a href="https://youtu.be/DyyOVRhAlpM?si=9r6QJJwOXf8pkKQZ" target="_blank" class="relative block rounded-lg overflow-hidden w-full h-full">
-                      <img src="https://img.youtube.com/vi/DyyOVRhAlpM/maxresdefault.jpg" alt="Cafe 1947" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"/>
-                      <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="text-center p-4">
-                          <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️ Watch on YouTube</span>
-                          <span class="text-pink-300 text-sm sm:text-base">2.4K views • 156 likes</span>
-                        </div>
-                      </div>
-                      <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">3:18</div>
-                    </a>
-                  </div>
-                  <div class="flex justify-between items-start">
-                    <div>
-                      <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
-                        cafe 1947.
-                      </h3>
-                      <p class="text-sm text-purple-200 opacity-80">Travel • 2023</p>
-                    </div>
-                    <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-    
-              <!-- Slide 3 - Music Video 1 -->
-              <div class="swiper-slide group">
-                <div class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
-                  <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
-                    <a href="https://youtu.be/JRZbjl1pekQ" target="_blank" class="relative block rounded-lg overflow-hidden w-full h-full">
-                      <img src="https://img.youtube.com/vi/JRZbjl1pekQ/maxresdefault.jpg" alt="Music Video 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"/>
-                      <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="text-center p-4">
-                          <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️ Watch on YouTube</span>
-                          <span class="text-pink-300 text-sm sm:text-base">5.7K views • 342 likes</span>
-                        </div>
-                      </div>
-                      <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">2:45</div>
-                    </a>
-                  </div>
-                  <div class="flex justify-between items-start">
-                    <div>
-                      <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
-                        music video 1.
-                      </h3>
-                      <p class="text-sm text-purple-200 opacity-80">Music • 2022</p>
-                    </div>
-                    <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-    
-              <!-- Slide 4 - Music Video 2 -->
-              <div class="swiper-slide group">
-                <div class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
-                  <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
-                    <a href="https://youtu.be/v3CZhKBbbmU" target="_blank" class="relative block rounded-lg overflow-hidden w-full h-full">
-                      <img src="https://img.youtube.com/vi/v3CZhKBbbmU/maxresdefault.jpg" alt="Music Video 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy"/>
-                      <div class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        <div class="text-center p-4">
-                          <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️ Watch on YouTube</span>
-                          <span class="text-pink-300 text-sm sm:text-base">8.3K views • 512 likes</span>
-                        </div>
-                      </div>
-                      <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">3:56</div>
-                    </a>
-                  </div>
-                  <div class="flex justify-between items-start">
-                    <div>
-                      <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
-                        music video 2.
-                      </h3>
-                      <p class="text-sm text-purple-200 opacity-80">Music • 2023</p>
-                    </div>
-                    <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <!-- Navigation - Enhanced -->
-            <div class="swiper-button-next hidden sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['➜']"></div>
-
-            <!-- Previous Button -->
-            <div class="swiper-button-prev hidden sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['⬅']"></div>
-            
-            <!-- Pagination with animation -->
-            <div class="swiper-pagination  !-bottom-16 lg:!-bottom-20 [--swiper-pagination-color:theme(colors.pink.300)] [--swiper-pagination-bullet-size:10px] sm:[--swiper-pagination-bullet-size:12px] [--swiper-pagination-bullet-horizontal-gap:6px]"></div>
-          </div>
-        </div>
-    
-      
       </div>
-    </section> 
+    </div>
+  </section>
 
-    <!-- Reels -->
-<section class="p-6 h-fit px-4 sm:px-10 lg:px-20 mt-16 ">
-  <!-- Title Section -->
-  <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-    <h4 class="text-3xl sm:text-4xl lg:text-3xl font-bold inline-block mb-6 relative z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
-      1080x1920's
-    </h4>
-    <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base hidden sm:block">
-      Hover over reels to preview. Click to watch on YouTube.
-    </p>
+  <div class="flex justify-center mb-10 items-center">
+    <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
   </div>
 
-  <!-- Swiper Container -->
-  <div class="swiper simpleSwiper relative">
-    <div class="swiper-wrapper pb-12">
-      <!-- All slides should have consistent sizing -->
-      <!-- Slide 1 -->
-      <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-auto">
-        <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
-          <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/maxresdefault.jpg" alt="Never Gonna Give You Up" class="w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
-          <video muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-            <h5 class="text-white font-semibold text-lg">Never Gonna Give You Up</h5>
-            <p class="text-gray-300 text-sm">Rick Astley • 3.2M views</p>
+  <!--  about-->
+
+  <section class="h-fit px-5 sm:px-6 py-8 sm:py-12 text-white relative overflow-hidden" id="about">
+    <!-- Horizontal "about vivek" text on mobile, vertical on desktop -->
+    <a href="#"
+      class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+      <span class="group-hover:translate-x-1 transition-transform duration-300 pb-5">about vivek</span>
+    </a>
+
+    <div
+      class="animate-group max-w-5xl lg:mx-auto grid grid-cols-1 px-0 lg:px:10 md:grid-cols-2 gap-8 sm:gap-12 relative z-10 sm:pt-0"
+      data-aos="fade-right">
+      <!-- Left Column -->
+      <div class="space-y-4 sm:space-y-8 order-2 md:order-1">
+        <!-- Software Logos (centered on mobile) -->
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 sm:justify-start sm:mt-12" data-aos-delay="300">
+          <img src="assets/capcut.png" alt="CapCut"
+            class="w-7 h-7 sm:w-8 sm:h-8 lg:w-10 lg:h-10 rounded-lg hover:scale-110 transition-transform duration-300" />
+          <img src="assets/adobe-premiere-svgrepo-com.svg" alt="premierepro"
+            class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300" />
+          <img src="assets/adobe-after-effects-svgrepo-com.svg" alt="aftereffect"
+            class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 hover:scale-110 rounded-lg transition-transform duration-300" />
+          <img src="assets/alightmotion.jpg" alt="alightmotion"
+            class="w-8 h-8 sm:w-9 sm:h-9 lg:w-11 lg:h-11 rounded-lg hover:scale-110 transition-transform duration-300" />
+          <img src="assets/blender-svgrepo-com.svg" alt="After Effects"
+            class="w-8 h-8 sm:w-9 sm:h-9 opacity-40 rounded-lg hover:opacity-100 hover:scale-110 transition-all duration-300" />
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 sm:justify-start" data-aos-delay="300">
+          <img src="assets/canva-icon.svg" alt="Canva"
+            class="w-8 h-8 sm:w-9 sm:h-9 object-cover rounded-lg hover:scale-110 transition-transform duration-300" />
+          <img src="assets/adobe-photoshop-icon.svg" alt="photoshop"
+            class="w-9 h-9 sm:w-10 sm:h-10 hover:scale-110 rounded-lg transition-transform duration-300" />
+        </div>
+
+        <!-- Skills Sections -->
+        <div class="space-y-4 sm:space-y-6 ml-2 lg:ml-0">
+          <div class="group animate-group" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2">
+              can do.
+            </h3>
+            <p class="text-xs sm:text-sm text-purple-100 group-hover:border-pink-500/60 transition-all duration-500">
+              <span class="font-semibold text-white">video editing.</span> i
+              have a solid understanding of cutting, assembling, and refining
+              footage to tell compelling stories.
+            </p>
           </div>
-        </a>
-      </div>
-    
-      <!-- Slide 2 -->
-      <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-auto">
-        <a href="https://youtu.be/J---aiyznGQ" target="_blank" class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
-          <img src="https://i.ytimg.com/vi/J---aiyznGQ/maxresdefault.jpg" alt="Keyboard Cat" class="w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
-          <video muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-            <h5 class="text-white font-semibold text-lg">Keyboard Cat</h5>
-            <p class="text-gray-300 text-sm">Classic Meme • 15M views</p>
-          </div>
-        </a>
-      </div>
-    
-      <!-- Slide 3 -->
-      <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-auto">
-        <a href="https://youtu.be/9bZkp7q19f0" target="_blank" class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
-          <img src="https://i.ytimg.com/vi/9bZkp7q19f0/maxresdefault.jpg" alt="Gangnam Style" class="w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
-          <video muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-            <h5 class="text-white font-semibold text-lg">Gangnam Style</h5>
-            <p class="text-gray-300 text-sm">PSY • 4.5B views</p>
-          </div>
-        </a>
-      </div>
-    
-      <!-- Slide 4 -->
-      <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-auto">
-        <a href="https://youtu.be/V-_O7nl0Ii0" target="_blank" class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
-          <img src="https://i.ytimg.com/vi/V-_O7nl0Ii0/maxresdefault.jpg" alt="Baby Shark" class="w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
-          <video muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-            <h5 class="text-white font-semibold text-lg">Baby Shark</h5>
-            <p class="text-gray-300 text-sm">Pinkfong • 14B views</p>
-          </div>
-        </a>
-      </div>
-    
-      <!-- Slide 5 -->
-      <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] mx-auto">
-        <a href="https://youtu.be/RgKAFK5djSk" target="_blank" class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
-          <img src="https://i.ytimg.com/vi/RgKAFK5djSk/maxresdefault.jpg" alt="See You Again" class="w-full h-full object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
-          <video muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
-            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
-          </video>
-          <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-            <h5 class="text-white font-semibold text-lg">See You Again</h5>
-            <p class="text-gray-300 text-sm">Wiz Khalifa • 6.5B views</p>
-          </div>
-        </a>
-      </div>
-    </div>
 
-    <!-- Swiper Pagination -->
-    <div class="swiper-pagination !-bottom-1"></div>
-
-    <!-- Swiper Navigation -->
-   <!-- Next Button -->
-<!-- Next Button -->
-<div class="swiper-button-next sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['➜']"></div>
-
-<!-- Previous Button -->
-<div class="swiper-button-prev sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['⬅']"></div>
-
-
-
-</section>
-
-    <div class="flex justify-center mb-10 items-center">
-      <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
-    </div>
-
-
-
-    <!-- client -->
-    <section
-      id="about"
-      class="px-8 relative overflow-hidden w-full h-[200px] flex items-center"
-    >
-      <a
-         href="#" class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-        <span
-          class="group-hover:translate-y-1 transition-transform duration-300"
-          >clients</span
-        >
-      </a>
-
-      <!-- WANTED Text with AOS fade-in -->
-      <div
-        class="absolute inset-0 flex items-center justify-center lg:mt-0"
-        data-aos="fade-up"
-        data-aos-duration="1500"
-        data-aos-delay="100"
-      >
-        <!-- <h1
-          class="text-[4rem] md:text-[10rem] text-center text-[#350A5E] mt-20 mb-20 w-[1060px] h-[145px] font-extrabold text-white opacity-[0.09] shadow-2xl leading-[26px] tracking-[20.8px] pointer-events-none select-none z-0"
-        >
-          WANTED
-        </h1> -->
-        <img
-          src="../assets/wanted.png"
-          class="font-extrabold text-white opacity-[0.09] shadow-2xl mt-10 tracking-[20.8px] pointer-events-none select-none z-0"
-        />
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-
-    <section
-      class="px-4 sm:px-6 py-12 text-white relative overflow-hidden"
-      id="contact"
-    >
-      <div class="rounded-xl p-8 custom_footer">
-        <!-- "Connect" link -->
-        <a
-          href="#"
-          class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[2.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group"
-        >
-          <span
-            class="group-hover:translate-y-1 transition-transform duration-300"
-            >connect</span
-          >
-        </a>
-
-        <div
-          class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-10 lg:mt-20"
-        >
-          <!-- Left: I can help you -->
-          <div
-            data-aos="fade-right"
-            data-aos-delay="300"
-            data-aos-duration="1500"
-          >
-            <h2 class="text-lg font-semibold mb-4">
-              i can help you if you relate to any of these:
-            </h2>
-            <ul class="space-y-3 text-purple-100 text-base pl-5">
-              <li class="list-disc">
-                you're on the hunt for a video editor or content wizard to help
-                you create videos.
+          <div class="group" data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2">
+              still learning but can do.
+            </h3>
+            <ul
+              class="text-xs sm:text-sm text-purple-100 mb-2 sm:mb-6 space-y-1 group-hover:border-purple-400/60 transition-all duration-500">
+              <li class="hover:text-white transition-colors font-semibold">
+                sfx.
               </li>
-              <li class="list-disc">
-                you need a video champion in your corner as you tell your
-                powerful story.
+              <li class="hover:text-white transition-colors font-semibold">
+                color grading.
               </li>
-              <li class="list-disc">
-                you've got a few ideas floating around and could use some help
-                deciding which one to tackle first.
-              </li>
-              <li class="list-disc">
-                you're low on time and energy so you want to create right videos
-                effectively.
+              <li class="hover:text-white transition-colors font-semibold">
+                motion graphics.
               </li>
             </ul>
           </div>
 
-          <!-- Right: Available for freelance -->
-          <div
-            class="mt-6 md:mt-0"
-            data-aos="fade-left"
-            data-aos-delay="300"
-            data-aos-duration="1500"
-          >
-            <div class="flex items-center gap-2 mb-2">
-              <span class="w-3 h-3 rounded-full bg-lime-400"></span>
-              <h2 class="text-lg font-semibold text-white">
-                available for freelance
-              </h2>
-            </div>
-            <p class="text-purple-100">
-              if you're looking for a freelance video editor to help bring an
-              idea to life and you're on a tight timeline—lets crush it!
-            </p>
+          <div class="group" data-aos="fade-up" data-aos-delay="600">
+            <h3
+              class="text-sm sm:text-lg font-semibold mb-1 sm:mb-2 flex items-center gap-2 opacity-10 hover:opacity-70 transition-opacity">
+              will learn.
+            </h3>
+            <ul
+              class="text-xs sm:text-sm text-purple-100 opacity-10 hover:opacity-70 space-y-1 group-hover:border-purple-200/30 transition-all duration-500">
+              <li class="hover:text-white transition-colors">vfx.</li>
+              <li class="hover:text-white transition-colors">animation.</li>
+              <li class="hover:text-white transition-colors">
+                sound design.
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- Footer Icons -->
-        <footer
-          class="mt-10 lg:mt-40 w-full px-4 sm:px-8 py-4 flex flex-col sm:flex-row items-center justify-end"
-        >
-          <div
-            class="order-2 sm:order-none w-full sm:w-1/3 flex justify-center my-4 sm:my-0"
-          >
-            <a
-              href="#top"
-              class="text-white text-2xl hover:text-purple-300"
-              id="navbar"
-            >
-              <i class="fa fa-angle-double-up animate-bounce"></i>
-              <!-- <img src="../assets/Group.png" class="w-6 "/> -->
-            </a>
-          </div>
-
-          <!-- Social Icons -->
-          <div
-            class="order-3 sm:order-none w-full sm:w-1/3 flex justify-center sm:justify-end space-x-4 sm:space-x-6"
-          >
-            <a
-              href="#"
-              class="text-white text-xl transition duration-300"
-              style="--tw-text-opacity: 1"
-              onmouseover="this.style.color='#E1306C'"
-              onmouseout="this.style.color='white'"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="#"
-              class="text-white text-xl transition duration-300"
-              onmouseover="this.style.color='#0077B5'"
-              onmouseout="this.style.color='white'"
-            >
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="#"
-              class="text-white text-xl transition duration-300"
-              onmouseover="this.style.color='#1DA1F2'"
-              onmouseout="this.style.color='white'"
-            >
-              <i class="fab fa-twitter"></i>
-            </a>
-            <a
-              href="#"
-              class="text-white text-xl transition duration-300"
-              onmouseover="this.style.color='#FF0000'"
-              onmouseout="this.style.color='white'"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a
-              href="#"
-              class="text-white text-xl transition duration-300"
-              onmouseover="this.style.color='#EA4335'"
-              onmouseout="this.style.color='white'"
-            >
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </footer>
       </div>
-    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/simple-icons-font@v7/font/simple-icons.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Right Column -->
+      <div class="sm:space-y-5 order-1 md:order-2" data-aos="fade-left">
+        <h3 class="text-xl sm:text-2xl font-semibold relative ml-2 lg:ml-0 inline-block pt-10">
+          <span class="relative z-10">my story.</span>
+        </h3>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-    <script src="portfolio.js"></script>
-  </body>
+        <div class="story-para space-y-4 sm:space-y-6">
+          <p class="text-xs sm:text-sm leading-relaxed text-justify lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
+            data-aos="fade-up" data-aos-delay="100">
+            i am a very <span class="line-through">lazy</span> creative and
+            zealous individual. once i set out on the rigorous path of
+            becoming a chartered accountant back in 2020, i quickly realized
+            that studying wasn't my thing and decided to pursue other passions
+            instead.
+          </p>
+
+          <p class="text-xs sm:text-sm leading-relaxed text-justify lowercase text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
+            data-aos="fade-up" data-aos-delay="200">
+            one of my biggest joys is editing videos, where my creativity
+            shines, despite my only professional training being a youtube
+            tutorial i watched at 2x speed. people don't know that half of my
+            workflow is trial, error, and a prayer to the "undo" button.
+          </p>
+
+          <p class="text-xs sm:text-sm leading-relaxed lowercase text-justify text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
+            data-aos="fade-up" data-aos-delay="300">
+            my fascination with video editing began during the 2020 lockdown
+            when i stumbled upon a cool edit online. that moment sparked
+            something within me, and i've been hooked ever since.
+          </p>
+
+          <p class="text-xs sm:text-sm leading-relaxed lowercase text-justify text-purple-100 font-inter rounded-lg transition-all duration-300 p-2 sm:p-0"
+            data-aos="fade-up" data-aos-delay="400">
+            outside of my editing suite, i'm an active guy who loves playing
+            football, gaming, and working on my calisthenics skills.
+            surprisingly, i'm also a decent cook and enjoy whipping up meals
+            when the mood strikes.
+          </p>
+        </div>
+        <div class="resume-download flex flex-row items-center justify-end gap-2 text-xs text-purple-200">
+          <span class="caveat-Font text-xs opacity-30 hover:opacity-70 transition-opacity duration-300">
+            click here to<br />download<br />my full resume
+          </span>
+          <button class="p-1 sm:p-2 rounded-full hover:scale-110 transition-all duration-300 group">
+            <img src="../assets/resume button.png" class="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]"
+              alt="Resume Button" />
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="flex justify-center mb-10 items-center">
+    <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
+  </div>
+
+  <!-- portfolio -->
+  <section class="py-16 px-4 sm:py-24 lg:py-32 relative overflow-hidden" id="portfolio">
+
+    <!-- Vertical link with animation -->
+    <a href="#"
+      class="absolute left-[10rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+      <span class="group-hover:translate-x-1 group-hover:scale-110 transition-all duration-500 flex items-center">
+        portfolio
+        <svg xmlns="http://www.w3.org/2000/svg"
+          class="h-5 w-5 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 20 20"
+          fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+    </a>
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <!-- Section header with animated underline -->
+      <div class="text-center mb-12 sm:mb-20" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+        <h4
+          class="text-3xl sm:text-4xl lg:text-3xl font-bold inline-block mb-6 relative z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
+          <span
+            class="relative z-10 bg-clip-text text-transparent bg-gradient-to-r from-pink-300 to-purple-400">1920x1080's</span>
+          <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></span>
+        </h4>
+        <!-- <p class="text-lg sm:text-xl text-purple-200 max-w-2xl mx-auto">A curated collection of my finest video work in stunning 1080p resolution</p> -->
+      </div>
+
+      <!-- Enhanced Swiper Container -->
+      <div class="mx-auto px-4 relative">
+        <div class="swiper-container mySwiper h-[240px] sm:h-[320px] md:h-[380px] lg:h-[420px]">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 - Enhanced with stats -->
+            <div class="swiper-slide custom-slide  group">
+              <div
+                class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-1 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
+                <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
+                  <a href="https://youtu.be/GAmSy3H3FR0" target="_blank"
+                    class="relative block rounded-lg overflow-hidden w-full h-full">
+                    <img src="https://img.youtube.com/vi/GAmSy3H3FR0/maxresdefault.jpg" alt="The Diwali Edit"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy" />
+                    <div
+                      class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div class="text-center p-4">
+                        <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️YouTube🔴</span>
+                        <!-- <span class="text-pink-300 text-sm sm:text-base">1.2K views • 94 likes</span> -->
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">1:20</div>
+                  </a>
+                </div>
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3
+                      class="text-2xl lg:text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-purple-300 transition-colors">
+                      the diwali edit.
+                    </h3>
+                    <p class="text-sm text-purple-200 opacity-80">Festival • 2023</p>
+                  </div>
+                  <!-- <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+                      </svg>
+                    </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 - Cafe 1947 -->
+            <div class="swiper-slide custom-slide  group">
+              <div
+                class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-1 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
+                <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
+                  <a href="https://youtu.be/DyyOVRhAlpM?si=9r6QJJwOXf8pkKQZ" target="_blank"
+                    class="relative block rounded-lg overflow-hidden w-full h-full">
+                    <img src="assets/cafe1947.webp" alt="Cafe 1947"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy" />
+                    <div
+                      class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div class="text-center p-4">
+                        <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️YouTube🔴</span>
+                        <!-- <span class="text-pink-300 text-sm sm:text-base">2.4K views • 156 likes</span> -->
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">30s</div>
+                  </a>
+                </div>
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
+                      cafe 1947.
+                    </h3>
+                    <p class="text-sm text-purple-200 opacity-80">Travel • 2023</p>
+                  </div>
+                  <!-- <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+                      </svg>
+                    </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 - Music Video 1 -->
+            <div class="swiper-slide custom-slide  group">
+              <div
+                class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-1 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
+                <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
+                  <a href="https://youtu.be/JRZbjl1pekQ" target="_blank"
+                    class="relative block rounded-lg overflow-hidden w-full h-full">
+                    <img src="https://img.youtube.com/vi/JRZbjl1pekQ/hqdefault.jpg" alt="Music Video 1"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy" />
+                    <div
+                      class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div class="text-center p-4">
+                        <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️YouTube🔴</span>
+                        <!-- <span class="text-pink-300 text-sm sm:text-base">5.7K views • 342 likes</span> -->
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">2:48</div>
+                  </a>
+                </div>
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
+                      music video 1.
+                    </h3>
+                    <p class="text-sm text-purple-200 opacity-80">Music • 2022</p>
+                  </div>
+                  <!-- <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+                      </svg>
+                    </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 - Music Video 2 -->
+            <div class="swiper-slide custom-slide  group">
+              <div
+                class="h-full bg-gradient-to-br from-purple-700/80 to-purple-900 rounded-xl sm:rounded-2xl p-1 sm:p-6 shadow-lg sm:shadow-2xl border border-white/10 overflow-hidden transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-xl">
+                <div class="relative overflow-hidden rounded-lg mb-4 sm:mb-6 h-[120px] sm:h-[220px] md:h-[260px]">
+                  <a href="https://youtu.be/v3CZhKBbbmU" target="_blank"
+                    class="relative block rounded-lg overflow-hidden w-full h-full">
+                    <img src="https://img.youtube.com/vi/v3CZhKBbbmU/hqdefault.jpg" alt="Music Video 2"
+                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy" />
+                    <div
+                      class="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <div class="text-center p-4">
+                        <span class="text-white text-xl sm:text-3xl font-bold block mb-2">▶️YouTube🔴</span>
+                        <!-- <span class="text-pink-300 text-sm sm:text-base">8.3K views • 512 likes</span> -->
+                      </div>
+                    </div>
+                    <div class="absolute top-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">2:27</div>
+                  </a>
+                </div>
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h3 class="text-2xl caveat-Font mb-1 sm:mb-2 group-hover:text-pink-300 transition-colors">
+                      music video 2.
+                    </h3>
+                    <p class="text-sm text-purple-200 opacity-80">Music • 2023</p>
+                  </div>
+                  <!-- <a href="#" class="text-pink-300 hover:text-white transition-colors" aria-label="Share">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" />
+                      </svg>
+                    </a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation - Enhanced -->
+          <div
+            class="swiper-button-next hidden sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['➜']">
+          </div>
+
+          <!-- Previous Button -->
+          <div
+            class="swiper-button-prev hidden sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['⬅']">
+          </div>
+
+          <!-- Pagination with animation -->
+          <div
+            class="swiper-pagination  !-bottom-16 lg:!-bottom-20 [--swiper-pagination-color:theme(colors.pink.300)] [--swiper-pagination-bullet-size:10px] sm:[--swiper-pagination-bullet-size:12px] [--swiper-pagination-bullet-horizontal-gap:6px]">
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Reels -->
+  <section class="p-6 h-fit px-4 sm:px-10 lg:px-20 mt-16 ">
+    <!-- Title Section -->
+    <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+      <h4
+        class="text-3xl sm:text-4xl lg:text-3xl font-bold inline-block mb-6 relative z-10 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text">
+        1080x1920's
+      </h4>
+      <p class="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base hidden sm:block">
+        Hover over reels to preview. Click to watch on YouTube.
+      </p>
+    </div>
+
+    <!-- Swiper Container -->
+    <div class="swiper simpleSwiper relative">
+      <div class="swiper-wrapper pb-12">
+        <!-- All slides should have consistent sizing -->
+        <!-- Slide 1 -->
+        <div class="swiper-slide w-[100px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/RRWVsHdhrQw?si=pxCsWct2CRalf9YT" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            <img src="https://img.youtube.com/vi/RRWVsHdhrQw/hqdefault.jpg" alt="Never Gonna Give You Up"
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel1.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font font-semibold text-lg">Never Gonna Give You Up</h5>
+              <!-- <p class="text-gray-300 text-sm">Rick Astley • 3.2M views</p> -->
+            </div>
+          </a>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/oYQlfpM2Vxo?si=UIxQSZhv504I8HeA" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
+            <img src="https://img.youtube.com/vi/oYQlfpM2Vxo/maxresdefault.jpg" alt="Keyboard Cat"
+              class=" h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel2.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font font-semibold text-lg">narrative style</h5>
+              <!-- <p class="text-gray-300 text-sm">Classic Meme • 15M views</p> -->
+            </div>
+          </a>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/lGKDRR-pi0w?si=LNVF7p6xk2XFTy2B" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            <img src="https://img.youtube.com/vi/lGKDRR-pi0w/maxresdefault.jpg" alt="Gangnam Style"
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel3.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font font-semibold text-lg">motion graphics</h5>
+              <!-- <p class="text-gray-300 text-sm">PSY • 4.5B views</p> -->
+            </div>
+          </a>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/ubu050rUKIE?si=Wz9QHLYkIjfJhyG7" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
+            <img src="https://img.youtube.com/vi/ubu050rUKIE/maxresdefault.jpg" alt="Baby Shark"
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel4.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font text-white font-semibold text-lg">end of the year</h5>
+              <!-- <p class="text-gray-300 text-sm">Pinkfong • 14B views</p> -->
+            </div>
+          </a>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/jUbtLCGWEiM?si=Z5PMUx38ghPIOnAT" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            <img src="https://img.youtube.com/vi/jUbtLCGWEiM/hqdefault.jpg" alt="See You Again"
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel5.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font text-white font-semibold text-lg">kindergarden school</h5>
+              <!-- <p class="text-gray-300 text-sm">Wiz Khalifa • 6.5B views</p> -->
+            </div>
+          </a>
+        </div>
+        <!-- Slide 6 -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/NGJuYJBGMW0?si=vP5ZrROoSJbdLyCL" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            <img src="https://img.youtube.com/vi/NGJuYJBGMW0/hqdefault.jpg " alt="See You Again"
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel6.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font text-white font-semibold text-lg">a transition video</h5>
+              <!-- <p class="text-gray-300 text-sm">Wiz Khalifa • 6.5B views</p> -->
+            </div>
+          </a>
+        </div>
+        <!-- Slide 7  -->
+        <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
+          <a href="https://youtube.com/shorts/xGVW3cVvMrA?si=BAskwR_QhAHUQNTs" target="_blank"
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            <img src="https://img.youtube.com/vi/xGVW3cVvMrA/hqdefault.jpg" alt="See You Again" class="w-full h-[115%]
+           group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
+              <source src="video/reel7.mp4" type="video/mp4" />
+            </video>
+            <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
+              <h5 class="caveat-Font text-white font-semibold text-lg">beat sync</h5>
+              <!-- <p class="text-gray-300 text-sm">Wiz Khalifa • 6.5B views</p> -->
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination !-bottom-1"></div>
+
+      <!-- Swiper Navigation -->
+      <!-- Next Button -->
+      <!-- Next Button -->
+      <div
+        class="hidden swiper-button-next sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['➜']">
+      </div>
+
+      <!-- Previous Button -->
+      <div
+        class="hidden swiper-button-prev sm:flex items-center justify-center !text-white !bg-black/50 hover:!bg-black/70 backdrop-blur-sm w-14 h-14 rounded-full shadow-lg transition-all duration-300 ease-in-out after:!text-3xl after:!font-bold after:content-['⬅']">
+      </div>
+
+
+
+  </section>
+
+  <div class="flex justify-center mb-10 items-center">
+    <div class="h-[3px] w-3/4 bg-[#430675] custom-shadow rounded-full"></div>
+  </div>
+
+
+
+  <!-- client -->
+  <section id="about" class="px-8 relative overflow-hidden w-full h-[300px] flex items-center">
+    <a href="#"
+      class="absolute left-[10rem] sm:-rotate-180 sm:left-20 top-[0.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+      <span class="group-hover:translate-y-1 transition-transform duration-300">clients</span>
+    </a>
+
+    <!-- WANTED Text with AOS fade-in -->
+    <div class="absolute inset-0 flex items-center justify-center lg:mt-0" data-aos="fade-up" data-aos-duration="1500"
+      data-aos-delay="100">
+      <!-- <h1
+          class="text-[4rem] md:text-[10rem] text-center text-[#350A5E] mt-20 mb-20 w-[1060px] h-[145px] font-extrabold text-white opacity-[0.09] shadow-2xl leading-[26px] tracking-[20.8px] pointer-events-none select-none z-0"
+        >
+          WANTED
+        </h1> -->
+      <img src="../assets/wanted.png"
+        class="font-extrabold text-white opacity-[0.09] shadow-2xl mt-10 tracking-[20.8px] pointer-events-none select-none z-0" />
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+
+  <section class="px-4 sm:px-6 py-12 text-white relative overflow-hidden" id="contact">
+    <div class="rounded-xl p-8 custom_footer">
+      <!-- "Connect" link -->
+      <a href="#"
+        class="absolute left-[9rem] sm:-rotate-180 sm:left-20 top-[2.5rem] sm:top-20 mt-0 sm:mt-10 -translate-y-0 sm:-translate-y-1/3 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-300 ease-in-out caveat-Font z-20 group">
+        <span class="group-hover:translate-y-1 transition-transform duration-300">connect</span>
+      </a>
+
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 items-start mt-10 lg:mt-20">
+        <!-- Left: I can help you -->
+        <div data-aos="fade-right" data-aos-delay="300" data-aos-duration="1500">
+          <h2 class="text-lg font-semibold mb-4">
+            i can help you if you relate to any of these:
+          </h2>
+          <ul class="space-y-3 text-purple-100 text-base pl-5">
+            <li class="list-disc">
+              you're on the hunt for a video editor or content wizard to help
+              you create videos.
+            </li>
+            <li class="list-disc">
+              you need a video champion in your corner as you tell your
+              powerful story.
+            </li>
+            <li class="list-disc">
+              you've got a few ideas floating around and could use some help
+              deciding which one to tackle first.
+            </li>
+            <li class="list-disc">
+              you're low on time and energy so you want to create right videos
+              effectively.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right: Available for freelance -->
+        <div class="mt-6 md:mt-0" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1500">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-3 h-3 rounded-full bg-lime-400"></span>
+            <h2 class="text-lg font-semibold text-white">
+              available for freelance
+            </h2>
+          </div>
+          <p class="text-purple-100">
+            if you're looking for a freelance video editor to help bring an
+            idea to life and you're on a tight timeline—lets crush it!
+          </p>
+
+           <!-- Inquiry Form -->
+  <!-- <form class="mt-4 space-y-3">
+    <input
+      type="email"
+      placeholder="Your email"
+      required
+      class="w-full px-4 py-2 rounded-md bg-purple-900 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-lime-400"
+    />
+    <textarea
+      placeholder="Your message"
+      required
+      rows="4"
+      class="w-full px-4 py-2 rounded-md bg-purple-900 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-lime-400"
+    ></textarea>
+    <button
+      type="submit"
+      class="bg-lime-400 text-purple-900 font-semibold px-6 py-2 rounded-md hover:bg-lime-300 transition"
+    >
+      Send Inquiry
+    </button>
+  </form> -->
+  <form id="contact-form" class="mt-4 space-y-3">
+    <input
+      type="email"
+      name="email"
+      placeholder="Your email"
+      required
+      class="w-full px-4 py-2 rounded-md bg-purple-900 text-white placeholder-purple-300"
+    />
+    <textarea
+      name="message"
+      placeholder="Your message"
+      required
+      rows="4"
+      class="w-full px-4 py-2 rounded-md bg-purple-900 text-white placeholder-purple-300"
+    ></textarea>
+    <button
+      type="submit"
+      class="bg-lime-400 text-purple-900 font-semibold px-6 py-2 rounded-md hover:bg-lime-300 transition"
+    >
+      Send Inquiry
+    </button>
+    <p id="form-status" class="text-lime-300 mt-2 hidden">Message sent successfully!</p>
+  </form>
+  
+        </div>
+      </div>
+
+      <!-- Footer Icons -->
+      <footer class="mt-10 lg:mt-20 w-full px-4 sm:px-8 py-4 flex flex-col sm:flex-row items-center justify-end">
+        <div class="order-2 sm:order-none w-full sm:w-1/3 flex justify-center my-4 sm:my-0">
+          <a href="#top" class="text-white text-2xl hover:text-purple-300" id="navbar">
+            <i class="fa fa-angle-double-up animate-bounce"></i>
+            <!-- <img src="../assets/Group.png" class="w-6 "/> -->
+          </a>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="order-3 sm:order-none w-full sm:w-1/3 flex justify-center sm:justify-end space-x-4 sm:space-x-6">
+          <a href="#" class="text-white text-xl transition duration-300" style="--tw-text-opacity: 1"
+            onmouseover="this.style.color='#E1306C'" onmouseout="this.style.color='white'">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-white text-xl transition duration-300" onmouseover="this.style.color='#0077B5'"
+            onmouseout="this.style.color='white'">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="text-white text-xl transition duration-300" onmouseover="this.style.color='black'"
+            onmouseout="this.style.color='white'">
+            <i class="fab fa-x-twitter text-xl"></i>
+          </a>
+          <a href="#" class="text-white text-xl transition duration-300" onmouseover="this.style.color='#FF0000'"
+            onmouseout="this.style.color='white'">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" class="text-white text-xl transition duration-300" onmouseover="this.style.color='#EA4335'"
+            onmouseout="this.style.color='white'">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/simple-icons-font@v7/font/simple-icons.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="finisher-header.es5.min.js" type="text/javascript"></script>
+  <script src="portfolio.js"></script>
+</body>
+
 </html>

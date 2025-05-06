@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 10, // smaller gap
       },
       640: {
@@ -237,4 +237,32 @@ document.addEventListener('DOMContentLoaded', function() {
       },
     }
   });
+});
+
+// email
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  const response = await fetch("https://formspree.io/f/mwpooaje", {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    status.classList.remove("hidden");
+    form.reset();
+
+  } else {
+    status.textContent = "Oops! Something went wrong.";
+    status.classList.remove("hidden");
+    status.classList.add("text-red-400");
+  }
 });
