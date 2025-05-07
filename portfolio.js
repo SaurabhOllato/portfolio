@@ -104,7 +104,7 @@ window.addEventListener("scroll", function () {
 //         },
 //       },
 //     },
-    
+
 //   });
 // });
 
@@ -132,7 +132,7 @@ window.addEventListener("scroll", function () {
 //   loop: true,
 //   grabCursor: true,
 //   centeredSlides: true,
-  
+
 //   breakpoints: {
 //     640: {
 //       slidesPerView: 2,
@@ -149,7 +149,6 @@ window.addEventListener("scroll", function () {
 //     clickable: true,
 //   },
 // });
-
 
 // new FinisherHeader({
 //   "count": 5,
@@ -206,17 +205,17 @@ const swiper = new Swiper(".mySwiper", {
   },
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  new Swiper('.simpleSwiper', {
+document.addEventListener("DOMContentLoaded", function () {
+  new Swiper(".simpleSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
-      el: '.swiper-pagination',
+      el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
     breakpoints: {
       320: {
@@ -235,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 4,
         spaceBetween: 30,
       },
-    }
+    },
   });
 });
 
@@ -269,7 +268,6 @@ form.addEventListener("submit", async function (e) {
   if (response.ok) {
     status.classList.remove("hidden");
     form.reset();
-
   } else {
     status.textContent = "Oops! Something went wrong.";
     status.classList.remove("hidden");
