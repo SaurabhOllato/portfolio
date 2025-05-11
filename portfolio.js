@@ -274,3 +274,11 @@ form.addEventListener("submit", async function (e) {
     status.classList.add("text-red-400");
   }
 });
+
+// function previewVideo(video) {
+//   video.play();
+//   setTimeout(() => {
+//     video.pause();
+//     video.currentTime = 0;
+//   }, 3000); // 3 seconds preview
+// }
