@@ -33,8 +33,12 @@ body {
   box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2); /* soft inner shadow */
 }
 .custom-shadow {
-  box-shadow: 0px -6px 20px rgba(39, 0, 75, 0.6);
+  box-shadow:
+    0px -6px 20px rgba(39, 0, 75, 0.6),       /* original */
+    0px -2px 6px rgba(39, 0, 75, 0.4),        /* softer inner shadow */
+    0px -12px 40px rgba(39, 0, 75, 0.3);      /* wider outer glow */
 }
+
 
 .nav-shadow {
   box-shadow: 0 5px 40px #27004b;

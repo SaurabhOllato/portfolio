@@ -321,3 +321,50 @@ form.addEventListener("submit", async function (e) {
       }
     });
   });
+
+ document.addEventListener("DOMContentLoaded", () => {
+    const blocks = document.querySelectorAll(".swiper-slide");
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    blocks.forEach(block => {
+      const video = block.querySelector(".video-player");
+      const thumbnail = block.querySelector(".thumbnail");
+
+      if (!video || !thumbnail) return;
+
+      if (isMobile) {
+        // Autoplay for 4 seconds on mobile
+        video.classList.add("opacity-100");
+        thumbnail.classList.add("opacity-0");
+        video.play();
+
+        setTimeout(() => {
+          video.pause();
+          video.currentTime = 0;
+          video.classList.remove("opacity-100");
+          thumbnail.classList.remove("opacity-0");
+        }, 20000);
+      } else {
+        // Hover behavior on desktop
+        block.addEventListener("mouseenter", () => {
+          video.classList.add("opacity-100");
+          thumbnail.classList.add("opacity-0");
+          video.play();
+
+          setTimeout(() => {
+            video.pause();
+            video.currentTime = 0;
+            video.classList.remove("opacity-100");
+            thumbnail.classList.remove("opacity-0");
+          }, 10000);
+        });
+
+        block.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0;
+          video.classList.remove("opacity-100");
+          thumbnail.classList.remove("opacity-0");
+        });
+      }
+    });
+  });
