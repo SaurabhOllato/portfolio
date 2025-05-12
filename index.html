@@ -142,8 +142,8 @@
   <section id="about" class="py-12 px-4 sm:py-20 sm:px-8 h-[650px]  relative overflow-hidden mb-20 flex items-center">
     <!-- Vertical "experience" link -->
     <a href="#"
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-      <span class="group-hover:translate-x-1 transition-transform duration-300">
+    class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+    <span class="group-hover:translate-x-1 transition-transform duration-300">
         experience
       </span>
     </a>
@@ -190,7 +190,7 @@
     class="rotate-[2deg] w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 ml-3 opacity-20 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300">
   </object>
 </div> -->
-      <!-- <div class="absolute -bottom-5 right-[4rem] sm:right-8 md:right-12 lg:right-16 pointer-events-none w-[3rem] sm:w-24 md:w-28 lg:w-32"
+<!-- <div class="absolute -bottom-5 right-[4rem] sm:right-8 md:right-12 lg:right-16 pointer-events-none w-[3rem] sm:w-24 md:w-28 lg:w-32"
      data-aos="fade-left" data-aos-delay="600" data-aos-duration="1500">
   <object data="./assets/Arrow4.svg" type="image/svg+xml"
     class="rotate-[2deg] w-full h-auto opacity-20 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300">
@@ -236,9 +236,9 @@
   <section class="h-fit px-5 sm:px-6 py-8 sm:py-12 text-white relative overflow-hidden" id="about">
     <!-- Horizontal "about vivek" text on mobile, vertical on desktop -->
     <a href="#"
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-      <span class="group-hover:translate-x-1 transition-transform duration-300 pb-5">about vivek</span>
-    </a>
+     class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+    <span class="group-hover:translate-x-1 transition-transform duration-300 pb-5">about vivek</span>
+  </a>
 
 
     <div
@@ -359,7 +359,8 @@
             click here to<br />download<br />my full resume
           </span>
           <button class="p-1 sm:p-2 rounded-full hover:scale-110 transition-all duration-300 group">
-            <img src="assets/resumebutton.png" class="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]" alt="Resume Button" />
+            <img src="/assets/resumebutton.png" class="w-[30px] h-[30px] sm:w-[60px] sm:h-[60px]"
+              alt="Resume Button" />
           </button>
         </div>
       </div>
@@ -376,8 +377,8 @@
 
     <!-- Vertical link with animation -->
     <a href="#"
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-      <span class="group-hover:translate-x-1 group-hover:scale-110 transition-all duration-500 flex items-center">
+    class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+    <span class="group-hover:translate-x-1 group-hover:scale-110 transition-all duration-500 flex items-center">
         portfolio
         <svg xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300" viewBox="0 0 20 20"
@@ -593,19 +594,17 @@
         <!-- Slide 1 -->
         <div class="swiper-slide w-[100px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
           <a href="https://youtube.com/shorts/RRWVsHdhrQw?si=pxCsWct2CRalf9YT" target="_blank"
-            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
-
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
             <img src="https://img.youtube.com/vi/RRWVsHdhrQw/hqdefault.jpg" alt="Never Gonna Give You Up"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
-
-            <video muted playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="thumbnail w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel1.mp4" type="video/mp4" />
             </video>
-
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
               <h5 class="caveat-Font font-semibold text-lg">Never Gonna Give Up</h5>
+              <!-- <p class="text-gray-300 text-sm">Rick Astley • 3.2M views</p> -->
             </div>
           </a>
         </div>
@@ -615,26 +614,28 @@
           <a href="https://youtube.com/shorts/oYQlfpM2Vxo?si=UIxQSZhv504I8HeA" target="_blank"
             class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
             <img src="https://img.youtube.com/vi/oYQlfpM2Vxo/maxresdefault.jpg" alt="Keyboard Cat"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
-            <video muted playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="thumbnail w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
+            <video muted loop playsinline
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel2.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
-              <h5 class="caveat-Font font-semibold text-lg">Narrative Style</h5>
+              <h5 class="caveat-Font font-semibold text-lg">narrative style</h5>
+              <!-- <p class="text-gray-300 text-sm">Classic Meme • 15M views</p> -->
             </div>
           </a>
         </div>
+
         <!-- Slide 3 -->
         <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
           <a href="https://youtube.com/shorts/lGKDRR-pi0w?si=LNVF7p6xk2XFTy2B" target="_blank"
             class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
             <img src="https://img.youtube.com/vi/lGKDRR-pi0w/maxresdefault.jpg" alt="Gangnam Style"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
             <video muted loop playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel3.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
@@ -647,12 +648,12 @@
         <!-- Slide 4 -->
         <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
           <a href="https://youtube.com/shorts/ubu050rUKIE?si=Wz9QHLYkIjfJhyG7" target="_blank"
-            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
+            class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300">
             <img src="https://img.youtube.com/vi/ubu050rUKIE/maxresdefault.jpg" alt="Baby Shark"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
             <video muted loop playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel4.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
@@ -667,10 +668,10 @@
           <a href="https://youtube.com/shorts/jUbtLCGWEiM?si=Z5PMUx38ghPIOnAT" target="_blank"
             class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
             <img src="https://img.youtube.com/vi/jUbtLCGWEiM/hqdefault.jpg" alt="See You Again"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
             <video muted loop playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel5.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
@@ -684,10 +685,10 @@
           <a href="https://youtube.com/shorts/NGJuYJBGMW0?si=vP5ZrROoSJbdLyCL" target="_blank"
             class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
             <img src="https://img.youtube.com/vi/NGJuYJBGMW0/hqdefault.jpg " alt="See You Again"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
+              class="w-full h-[115%] object-cover group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
             <video muted loop playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel6.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
@@ -700,12 +701,11 @@
         <div class="swiper-slide w-[300px] h-[300px] lg:w-[400px] lg:h-[430px] mx-auto">
           <a href="https://youtube.com/shorts/xGVW3cVvMrA?si=BAskwR_QhAHUQNTs" target="_blank"
             class="block w-full h-full rounded-2xl shadow-xl overflow-hidden group relative transition-all duration-300 ">
-            <img src="https://img.youtube.com/vi/xGVW3cVvMrA/hqdefault.jpg" alt="See You Again"
-              class="thumbnail w-full h-[115%] object-cover transition-opacity duration-300 rounded-2xl" />
-
+            <img src="https://img.youtube.com/vi/xGVW3cVvMrA/hqdefault.jpg" alt="See You Again" class="w-full h-[115%]
+           group-hover:opacity-0 transition-opacity duration-300 rounded-2xl" />
             <video muted loop playsinline
-              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 transition-opacity duration-300"
-              preload="metadata">
+              class="video-player absolute top-0 left-0 w-full h-full object-cover rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              onmouseenter="this.play()" onmouseleave="this.pause(); this.currentTime=0;">
               <source src="video/reel7.mp4" type="video/mp4" />
             </video>
             <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
@@ -745,8 +745,8 @@
   <!-- client -->
   <section id="about" class="px-8 relative overflow-hidden w-full h-[300px] flex items-center">
     <a href="#"
-      class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
-      <span class="group-hover:translate-y-1 transition-transform duration-300">clients</span>
+    class="absolute top-4 left-1/2 transform -translate-x-1/2 sm:left-6 sm:top-20 sm:translate-x-0 sm:-rotate-180 vertical-text-mobile sm:vertical-text hover:text-pink-300 transition-all duration-500 ease-in-out caveat-Font z-20 group">
+    <span class="group-hover:translate-y-1 transition-transform duration-300">clients</span>
     </a>
 
     <!-- WANTED Text with AOS fade-in -->
