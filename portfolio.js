@@ -28,15 +28,15 @@
 //   typeEffect();
 // };
 
-window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
-  if (window.scrollY > 5) {
-    // Adjust this value based on when you want the effect to trigger
-    navbar.classList.add("navbar-scrolled");
-  } else {
-    navbar.classList.remove("navbar-scrolled");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   const navbar = document.getElementById("navbar");
+//   if (window.scrollY > 5) {
+//     // Adjust this value based on when you want the effect to trigger
+//     navbar.classList.add("navbar-scrolled");
+//   } else {
+//     navbar.classList.remove("navbar-scrolled");
+//   }
+// });
 
 // document.addEventListener("DOMContentLoaded", function () {
 //   const swiper = new Swiper(".mySwiper", {
