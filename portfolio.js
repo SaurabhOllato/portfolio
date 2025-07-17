@@ -374,3 +374,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// spinner
+
+window.addEventListener("load", function () {
+  setTimeout(() => {
+    const preloader = document.querySelector(".cat");
+    const content = document.getElementById("main-content");
+
+    preloader.style.display = "none";
+    content.style.display = "block";
+  }, 3000); // 3000ms = 3 seconds
+});
