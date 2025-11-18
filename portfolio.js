@@ -249,31 +249,31 @@ if (window.innerWidth < 1024) {
 }
 
 // email
-const form = document.getElementById("contact-form");
-const status = document.getElementById("form-status");
+// const form = document.getElementById("contact-form");
+// const status = document.getElementById("form-status");
 
-form.addEventListener("submit", async function (e) {
-  e.preventDefault();
+// form.addEventListener("submit", async function (e) {
+//   e.preventDefault();
 
-  const formData = new FormData(form);
+//   const formData = new FormData(form);
 
-  const response = await fetch("https://formspree.io/f/manjovkk", {
-    method: "POST",
-    body: formData,
-    headers: {
-      Accept: "application/json",
-    },
-  });
+//   const response = await fetch("https://formspree.io/f/manjovkk", {
+//     method: "POST",
+//     body: formData,
+//     headers: {
+//       Accept: "application/json",
+//     },
+//   });
 
-  if (response.ok) {
-    status.classList.remove("hidden");
-    form.reset();
-  } else {
-    status.textContent = "Oops! Something went wrong.";
-    status.classList.remove("hidden");
-    status.classList.add("text-red-400");
-  }
-});
+//   if (response.ok) {
+//     status.classList.remove("hidden");
+//     form.reset();
+//   } else {
+//     status.textContent = "Oops! Something went wrong.";
+//     status.classList.remove("hidden");
+//     status.classList.add("text-red-400");
+//   }
+// });
 
 document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".swiper-slide");
@@ -384,5 +384,5 @@ window.addEventListener("load", function () {
 
     preloader.style.display = "none";
     content.style.display = "block";
-  }, 3000); // 3000ms = 3 seconds
+  }, 2000); // 3000ms = 3 seconds
 });
