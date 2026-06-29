@@ -188,11 +188,14 @@ const swiper = new Swiper(".mySwiper", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
+  speed: 750,
+  watchSlidesProgress: true,
   coverflowEffect: {
-    rotate: 50,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
+    rotate: 46,
+    stretch: -18,
+    depth: 180,
+    modifier: 1.2,
     slideShadows: true,
   },
   pagination: {
@@ -203,50 +206,76 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    320: {
+      coverflowEffect: {
+        rotate: 24,
+        stretch: -8,
+        depth: 140,
+        modifier: 1.15,
+        slideShadows: true,
+      },
+    },
+    768: {
+      coverflowEffect: {
+        rotate: 36,
+        stretch: -14,
+        depth: 170,
+        modifier: 1.15,
+        slideShadows: true,
+      },
+    },
+    1024: {
+      coverflowEffect: {
+        rotate: 48,
+        stretch: -24,
+        depth: 220,
+        modifier: 1.25,
+        slideShadows: true,
+      },
+    },
+  },
 });
 
 document.addEventListener("DOMContentLoaded", function () {
   new Swiper(".simpleSwiper", {
-    slidesPerView: 1,
+    slidesPerView: "auto",
     spaceBetween: 20,
+    centeredSlides: true,
+    grabCursor: true,
+    speed: 650,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".reels-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".reels-button-next",
+      prevEl: ".reels-button-prev",
     },
     breakpoints: {
       320: {
-        slidesPerView: 2,
-        spaceBetween: 10, // smaller gap
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 24,
       },
       640: {
-        slidesPerView: 1.2,
-        spaceBetween: 20,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 28,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: "auto",
+        centeredSlides: false,
         spaceBetween: 25,
       },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: "auto",
+        centeredSlides: false,
         spaceBetween: 30,
       },
     },
   });
 });
-
-const video = document.querySelector(".video-player");
-
-if (window.innerWidth < 1024) {
-  // On smaller screens (mobile/tablet)
-  video.style.opacity = "1"; // Show video
-  video.play().catch((err) => {
-    console.warn("Autoplay blocked:", err.message);
-  });
-}
 
 // email
 // const form = document.getElementById("contact-form");
@@ -277,7 +306,22 @@ if (window.innerWidth < 1024) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".swiper-slide");
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const isTouchDevice = window.matchMedia("(hover: none)").matches;
+
+  const showPreview = (video, thumbnail) => {
+    video.classList.add("opacity-100");
+    thumbnail.classList.add("opacity-0");
+    video.play().catch((err) => {
+      console.warn("Autoplay blocked:", err.message);
+    });
+  };
+
+  const hidePreview = (video, thumbnail) => {
+    video.pause();
+    video.currentTime = 0;
+    video.classList.remove("opacity-100");
+    thumbnail.classList.remove("opacity-0");
+  };
 
   blocks.forEach((block) => {
     const video = block.querySelector(".video-player");
@@ -285,93 +329,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!video || !thumbnail) return;
 
-    if (isMobile) {
-      const previewDuration = 10000; // 10 seconds
+    if (isTouchDevice) {
+      showPreview(video, thumbnail);
 
-      function playPreviewLoop() {
-        video.classList.add("opacity-100");
-        thumbnail.classList.add("opacity-0");
-        video.play();
-
-        setTimeout(() => {
-          video.pause();
-          video.currentTime = 0;
-          video.play(); // Immediately start again
-        }, previewDuration);
-      }
-
-      // Run the loop continuously every 10 seconds
-      playPreviewLoop();
-      setInterval(playPreviewLoop, previewDuration);
-    } else {
-      // Hover behavior on desktop
-      block.addEventListener("mouseenter", () => {
-        video.classList.add("opacity-100");
-        thumbnail.classList.add("opacity-0");
-        video.play();
-
-        setTimeout(() => {
-          video.pause();
-          video.currentTime = 0;
-          video.classList.remove("opacity-100");
-          thumbnail.classList.remove("opacity-0");
-        }, 10000);
-      });
-
-      block.addEventListener("mouseleave", () => {
-        video.pause();
-        video.currentTime = 0;
-        video.classList.remove("opacity-100");
-        thumbnail.classList.remove("opacity-0");
-      });
+      setTimeout(() => {
+        hidePreview(video, thumbnail);
+      }, 8000);
+      return;
     }
+
+    block.addEventListener("mouseenter", () => showPreview(video, thumbnail));
+    block.addEventListener("mouseleave", () => hidePreview(video, thumbnail));
   });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const blocks = document.querySelectorAll(".swiper-slide");
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const socialGroup = document.querySelector(".mobile-socials");
+  const socialToggle = document.querySelector(".mobile-social-toggle");
 
-  blocks.forEach((block) => {
-    const video = block.querySelector(".video-player");
-    const thumbnail = block.querySelector(".thumbnail");
+  if (!socialGroup || !socialToggle) return;
 
-    if (!video || !thumbnail) return;
-
-    if (isMobile) {
-      // Autoplay for 4 seconds on mobile
-      video.classList.add("opacity-100");
-      thumbnail.classList.add("opacity-0");
-      video.play();
-
-      setTimeout(() => {
-        video.pause();
-        video.currentTime = 0;
-        video.classList.remove("opacity-100");
-        thumbnail.classList.remove("opacity-0");
-      }, 20000);
-    } else {
-      // Hover behavior on desktop
-      block.addEventListener("mouseenter", () => {
-        video.classList.add("opacity-100");
-        thumbnail.classList.add("opacity-0");
-        video.play();
-
-        setTimeout(() => {
-          video.pause();
-          video.currentTime = 0;
-          video.classList.remove("opacity-100");
-          thumbnail.classList.remove("opacity-0");
-        }, 10000);
-      });
-
-      block.addEventListener("mouseleave", () => {
-        video.pause();
-        video.currentTime = 0;
-        video.classList.remove("opacity-100");
-        thumbnail.classList.remove("opacity-0");
-      });
-    }
+  socialToggle.addEventListener("click", () => {
+    const isOpen = socialGroup.classList.toggle("is-open");
+    socialToggle.setAttribute("aria-expanded", String(isOpen));
   });
 });
 
@@ -380,9 +360,13 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("load", function () {
   setTimeout(() => {
     const preloader = document.querySelector(".cat");
-    const content = document.getElementById("main-content");
 
-    preloader.style.display = "none";
-    content.style.display = "block";
+    if (!preloader) return;
+
+    preloader.classList.add("fade-out");
+    setTimeout(() => {
+      document.body.classList.remove("is-loading");
+      preloader.style.display = "none";
+    }, 500);
   }, 2000); // 3000ms = 3 seconds
 });
