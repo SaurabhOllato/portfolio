@@ -397,7 +397,15 @@ svg {
     perspective: 900px;
   }
   .mySwiper .swiper-slide {
-    opacity: 0.45;
+    opacity: 1;
+    filter: none;
+  }
+  .mySwiper .swiper-slide-active {
+    filter: none;
+  }
+  .mySwiper .swiper-slide-shadow-left,
+  .mySwiper .swiper-slide-shadow-right {
+    display: none;
   }
 }
 
